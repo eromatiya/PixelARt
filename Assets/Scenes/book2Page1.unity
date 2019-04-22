@@ -72019,6 +72019,7 @@ GameObject:
   - component: {fileID: 1915753102}
   - component: {fileID: 1915753101}
   - component: {fileID: 1915753103}
+  - component: {fileID: 1915753104}
   m_Layer: 5
   m_Name: UIControl
   m_TagString: Controller
@@ -72109,6 +72110,17 @@ MonoBehaviour:
   ScoreBoard: {fileID: 334898177}
   StarBoard: {fileID: 877237855}
   Environment: {fileID: 440175148}
+--- !u!114 &1915753104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915753100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ed412485af4aa40924735279cff503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1924870531
 GameObject:
   m_ObjectHideFlags: 0

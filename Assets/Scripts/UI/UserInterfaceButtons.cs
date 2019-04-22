@@ -339,6 +339,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		isInGame = true;
 		sandBoxOnButton.GetComponent<Button> ().interactable = false;
         modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = true;
+        decARScale();
 
         if (activeScene != "book1Page3")
         {
@@ -377,6 +378,10 @@ public class UserInterfaceButtons : MonoBehaviour
         //sandBoxOnButton.GetComponent<Button> ().interactable = true;
         //DisableExtTracking (); to be removed
         modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = false;
+
+
+        origARScale();
+
         if (!isOnTarget || !isAROn) {
             StartGame.GetComponent<Button>().interactable = false;
 			sandBoxOnButton.GetComponent<Button>().interactable = false;
@@ -635,7 +640,8 @@ public class UserInterfaceButtons : MonoBehaviour
 
 		spawner.transform.localPosition = new Vector3 (0.0f, 0.0f, 0.0f);
 
-        ResizeModel(0.3f, 0.3f, 0.3f);
+        //ResizeModel(0.3f, 0.3f, 0.3f);
+        decARScale();
 
 		if (!isExtendedTracking) {
             //EnableExtTracking (); to be removed
@@ -666,7 +672,8 @@ public class UserInterfaceButtons : MonoBehaviour
 
 	public void SandBoxOff(){
 
-        ResizeModel(1.0f, 1.0f, 1.0f);
+        //ResizeModel(1.0f, 1.0f, 1.0f);
+        origARScale();
 
         if (isExtendedTracking) {
             //DisableExtTracking (); to be removed
@@ -917,6 +924,26 @@ public class UserInterfaceButtons : MonoBehaviour
 
         }
         
+    }
+
+
+    #endregion
+
+
+
+
+    #region AR_SCALER
+
+    private void decARScale()
+    {
+
+        gameObject.GetComponent<ARScaleFactor>().decreaseARScale();
+
+    }
+
+    private void origARScale() {
+
+        gameObject.GetComponent<ARScaleFactor>().returnOrigARScale();
     }
 
 
