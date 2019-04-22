@@ -12,7 +12,7 @@ public class ScoreScript : MonoBehaviour {
 
     private int DiffLvl = 1;
     private int MaxDiffLvl = 20;
-    private int ScrToNxtLvl = 50;
+    private int ScrToNxtLvl = 100;
 
     bool Play;
 

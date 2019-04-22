@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class RunZ : MonoBehaviour {
 
-    private float origSpeed = 1.0f;
-    private float Speed = 1.0f;
+    private float origSpeed = 0.75f;
+    private float Speed = 0.75f;
     public GameObject model;
 
     // Use this for initialization
@@ -60,7 +60,7 @@ public class RunZ : MonoBehaviour {
     {
 		float speeder;
 
-		speeder = SpeedUp * 0.025f;
+		speeder = SpeedUp * 0.050f;
 
 		Debug.Log (speeder);
 
