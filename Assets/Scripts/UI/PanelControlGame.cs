@@ -61,13 +61,28 @@ public class PanelControlGame : MonoBehaviour {
         sceneName = SceneManager.GetActiveScene();
         activeScene = sceneName.name;
 
-
-        if (activeScene == "book2Page2" || activeScene == "book2Page3") {
+        if (GameObject.Find("NaturePanel"))
+        {
 
             naturePanel = GameObject.Find("NaturePanel");
             natureAnim = naturePanel.GetComponent<Animator>();
             natureCanGroup = naturePanel.GetComponent<CanvasGroup>();
+
         }
+        else if (GameObject.Find("MiscPanel"))
+        {
+
+            naturePanel = GameObject.Find("MiscPanel");
+            natureAnim = naturePanel.GetComponent<Animator>();
+            natureCanGroup = naturePanel.GetComponent<CanvasGroup>();
+
+        }
+        else {
+
+            naturePanel = null;
+
+        }
+
 
     }
 	
@@ -153,11 +168,16 @@ public class PanelControlGame : MonoBehaviour {
 
 		if (invTreeCanGroup.alpha == 0) {
 			if (invWoodsCanGroup.alpha == 0) {
-				if (invCanGroup.alpha == 1)       {
 
-					invAnim.Play ("Panel Out");
+                if (naturePanel == null || natureCanGroup.alpha == 0)
+                {
+                    if (invCanGroup.alpha == 1)
+                    {
 
-				}
+                        invAnim.Play("Panel Out");
+
+                    }
+                }
 			}
 		}
 

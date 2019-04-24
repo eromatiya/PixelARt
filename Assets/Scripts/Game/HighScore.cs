@@ -39,7 +39,32 @@ public class HighScore : MonoBehaviour {
 
             case ("book2Page1"):
 
-                highScoreInit("book1page3HS");
+                highScoreInit("book2page1HS");
+                break;
+
+            case ("book2Page2"):
+
+                highScoreInit("book2page2HS");
+                break;
+
+            case ("book2Page3"):
+
+                highScoreInit("book2page3HS");
+                break;
+
+            case ("book3Page1"):
+
+                highScoreInit("book3page1HS");
+                break;
+
+            case ("book3Page2"):
+
+                highScoreInit("book3page2HS");
+                break;
+
+            case ("book3Page3"):
+
+                highScoreInit("book3page3HS");
                 break;
 
             default:
@@ -84,7 +109,22 @@ public class HighScore : MonoBehaviour {
 
                 highScoreManager("book2Page3HS");
                 break;
+                
+            case ("book3Page1"):
 
+                highScoreManager("book3Page1HS");
+                break;
+
+            case ("book3Page2"):
+
+                highScoreManager("book3Page2HS");
+                break;
+
+
+            case ("book3Page3"):
+
+                highScoreManager("book3Page3HS");
+                break;
             default:
 			
 			break;

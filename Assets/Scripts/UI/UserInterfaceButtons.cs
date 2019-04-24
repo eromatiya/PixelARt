@@ -138,7 +138,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
         // transform.Rotate (0, -rotationSpeed * Time.deltaTime, 0);
 
-        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
+        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1")
         {
 
             Model.transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
@@ -154,7 +154,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
 		// transform.Rotate (0, rotationSpeed * Time.deltaTime, 0);
 
-        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
+        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1")
         {
 
             Model.transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
@@ -652,6 +652,7 @@ public class UserInterfaceButtons : MonoBehaviour
 
 		spawner.transform.localPosition = new Vector3 (0.0f, 0.0f, 0.0f);
 
+        freezeTexture();
         //ResizeModel(0.3f, 0.3f, 0.3f);
         decARScale();
 
@@ -668,7 +669,6 @@ public class UserInterfaceButtons : MonoBehaviour
 		spawner.SetActive (true);
 		isSandbox = true;
         //regionCapture.SetActive (false);
-        freezeTexture();
 		sandboxManager.GetComponent<SaveLoadSystem> ().LoadState ();
 
 

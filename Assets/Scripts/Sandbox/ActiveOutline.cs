@@ -99,6 +99,7 @@ public class ActiveOutline : MonoBehaviour
 
             }
 
+            activateOutline = false;
 
         }
     }

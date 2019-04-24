@@ -12,7 +12,7 @@ public class VolumeSliderControl : MonoBehaviour {
 	public Slider slider;
 	// Music volume variable that will be modifiedx
 	// by dragging slider knob
-	private float musicVolume = 1f;
+	private float musicVolume = 0.5f;
 
 
 	// Use this for initialization

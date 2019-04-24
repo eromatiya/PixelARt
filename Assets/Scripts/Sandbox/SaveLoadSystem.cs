@@ -62,6 +62,14 @@ public class SaveLoadSystem : MonoBehaviour {
                 loadDirName = "Sandbox/Space3Prefabs";
                 break;
 
+            case ("book3Page1"):
+
+                savefileName = "skyline.xml";
+                loadDirName = "Sandbox/SkylinePrefabs";
+                break;
+
+
+
 
             default:
 			break;

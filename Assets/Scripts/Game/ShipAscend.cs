@@ -38,7 +38,13 @@ public class ShipAscend : MonoBehaviour {
 
                 anim.Play("GlideRight");
             }
-            else {
+            else if (activeScene == "book3Page1") {
+
+                anim.Play("RotorRight");
+
+            }
+            else
+            {
 
                 anim.Play("BarrelRight3");
             }
@@ -61,7 +67,13 @@ public class ShipAscend : MonoBehaviour {
 
                 anim.Play("GlideLeft");
             }
-            else {
+            else if (activeScene == "book3Page1") {
+
+                anim.Play("RotorLeft");
+            }
+
+            else
+            {
                 anim.Play("BarrelLeft3");
             }
             anim.SetTrigger("goToEmpty");
