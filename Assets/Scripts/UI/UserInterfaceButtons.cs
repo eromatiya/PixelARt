@@ -338,7 +338,7 @@ public class UserInterfaceButtons : MonoBehaviour
         MovePanel.SetActive(true);
 		isInGame = true;
 		sandBoxOnButton.GetComponent<Button> ().interactable = false;
-        modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = true;
+        freezeTexture();
         decARScale();
 
         if (activeScene != "book1Page3")
@@ -377,8 +377,7 @@ public class UserInterfaceButtons : MonoBehaviour
         Playing = false;
         //sandBoxOnButton.GetComponent<Button> ().interactable = true;
         //DisableExtTracking (); to be removed
-        modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = false;
-
+        unfreezeTexture();
 
         origARScale();
 
@@ -494,6 +493,14 @@ public class UserInterfaceButtons : MonoBehaviour
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 180.0f);
 
         }
+        else if (activeScene == "book3Page1")
+        {
+
+            Model.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+            Model.transform.localEulerAngles = new Vector3(0, 0, 180);
+
+        }
+
 
     }
 
@@ -507,6 +514,10 @@ public class UserInterfaceButtons : MonoBehaviour
         if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
         {
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0);
+        }
+        else if (activeScene == "book3Page1") {
+            
+            Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0.0f);
         }
         else { Model.transform.eulerAngles = new Vector3(0, 180, 0); }
 
@@ -627,6 +638,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		StartGame.SetActive (true);
 		StopGame.SetActive (false);
 		StarBoard.SetActive (false);
+        PlayButton.SetActive(false);
 	}
 
 
@@ -656,7 +668,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		spawner.SetActive (true);
 		isSandbox = true;
         //regionCapture.SetActive (false);
-        modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = true;
+        freezeTexture();
 		sandboxManager.GetComponent<SaveLoadSystem> ().LoadState ();
 
 
@@ -686,7 +698,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		sandBoxOnButton.SetActive (true);
 		sandboxManager.GetComponent<SaveLoadSystem> ().DestroyChildren ();
         //regionCapture.SetActive (true);
-        modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = false;
+        unfreezeTexture();
 
 		if (togglingSandbox) {
 		
@@ -944,6 +956,59 @@ public class UserInterfaceButtons : MonoBehaviour
     private void origARScale() {
 
         gameObject.GetComponent<ARScaleFactor>().returnOrigARScale();
+    }
+
+
+    #endregion
+
+
+    #region FREEZE_ENABLE
+
+    private void freezeTexture() {
+
+        if (modelTexture.transform.childCount == 0)
+        {
+
+            modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = true;
+
+        }
+        else {
+
+
+            foreach (RC_Get_Texture rc in modelTexture.GetComponentsInChildren<RC_Get_Texture>()) {
+
+
+                rc.FreezeEnable = true;
+
+            }
+
+        }
+
+    }
+
+    private void unfreezeTexture() {
+
+        if (modelTexture.transform.childCount == 0)
+        {
+
+            modelTexture.GetComponent<RC_Get_Texture>().FreezeEnable = false;
+
+        }
+        else
+        {
+
+
+            foreach (RC_Get_Texture rc in modelTexture.GetComponentsInChildren<RC_Get_Texture>())
+            {
+
+
+                rc.FreezeEnable = false;
+
+            }
+
+        }
+
+
     }
 
 

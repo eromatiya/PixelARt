@@ -92817,10 +92817,10 @@ MonoBehaviour:
   - {fileID: 1897475764345998, guid: 1cf224059ebbf994b8b3f8247fc06de6, type: 2}
   - {fileID: 1773797970306316, guid: ed9b39e1f9dea834292c1975003f21be, type: 2}
   - {fileID: 1349952911647036, guid: 59ae1c7f2bf10f640a7b1de62846506c, type: 2}
-  - {fileID: 1593851990682044, guid: 7af845184933bad4c8e6958d8e1db394, type: 2}
+  - {fileID: 1296370180122504, guid: 7af845184933bad4c8e6958d8e1db394, type: 2}
   - {fileID: 1432110669752814, guid: e6650daefeed3f84b96ae4fe164df6bc, type: 2}
   - {fileID: 1596070225749868, guid: d23f59d65133abc4d880c93ce6c886bd, type: 2}
-  - {fileID: 1089431310148020, guid: c6178addf75bacc41b16b7e5529baa1b, type: 2}
+  - {fileID: 1958455751207764, guid: c6178addf75bacc41b16b7e5529baa1b, type: 2}
   - {fileID: 1201972207269052, guid: a0e0b1c6e6e249d4bb022d9fdb1f0aa0, type: 2}
   spawnMode: 0
   deleteMode: 0
@@ -96748,7 +96748,6 @@ GameObject:
   - component: {fileID: 2126882351}
   - component: {fileID: 2126882354}
   - component: {fileID: 2126882355}
-  - component: {fileID: 2126882356}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: MainCamera
@@ -96850,32 +96849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c71f3dd8b899ed4984552a9f9e8820c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2126882356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2126882349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9191284b058eef549b7108b5f04e1117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensityMultiplier: 0.25
-  generalIntensity: 0.5
-  blackIntensity: 1
-  whiteIntensity: 1
-  midGrey: 0.2
-  dx11Grain: 0
-  softness: 0
-  monochrome: 0
-  intensities: {x: 1, y: 1, z: 1}
-  tiling: {x: 64, y: 64, z: 64}
-  monochromeTiling: 64
-  filterMode: 1
-  noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
-  noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
-  dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
 --- !u!1 &2131814544
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,12 +10,14 @@ public class TileManager : MonoBehaviour
     private Transform EnvironmentTransform;
 
     private int amtTileOnScr = 3;
-    private float Marker = 0.0f;
+    private float Marker = -5.0f;
     private int LastPrefabIndex = 0;
 
     private List<GameObject> ActiveTiles;
 
 	private int preserveTUntil = 0;
+
+    private bool isNormal = true;
 
     // Use this for initialization
 
@@ -25,10 +27,8 @@ public class TileManager : MonoBehaviour
         ActiveTiles = new List<GameObject>();
 
         //Get transform of env
-        EnvironmentTransform = GameObject.FindGameObjectWithTag("Env").transform;
-
+        EnvironmentTransform = gameObject.GetComponentInParent<Transform>().transform;
  
-		SpawnTile (0);
     }
 
 
@@ -38,7 +38,13 @@ public class TileManager : MonoBehaviour
         //Spawn tiles
         if (((int)EnvironmentTransform.position.z) < Marker)
         {
-            SpawnTile();
+            if (isNormal)
+            {
+                SpawnTile(0);
+                isNormal = false;
+
+            } else { SpawnTile(); }
+
             Marker -= 5.0f;
 
 			//Fixes the bug - overlapping tiles to each other
@@ -66,7 +72,7 @@ public class TileManager : MonoBehaviour
 
 
         GO.transform.SetParent(transform);
-        GO.transform.position = new Vector3(-0.35f, 0.0f, 10.0f);
+        GO.transform.position = new Vector3(-0.35f, 0.0f, 5.0f);
         ActiveTiles.Add(GO);
     }
 
@@ -95,6 +101,9 @@ public class TileManager : MonoBehaviour
 		//Debug.Log(transform.childCount);
 
 		preserveTUntil = 0;
+
+        //make normal spawn again
+        isNormal = true;
 	}
 
 
@@ -108,6 +117,7 @@ public class TileManager : MonoBehaviour
 
     public void StopSpawn()
     {
+        //Hackish way to fix the bugs hahahahah
         DeleteTile();
         DeleteTile();
         DeleteTile();
