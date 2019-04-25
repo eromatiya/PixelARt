@@ -32,7 +32,7 @@ public class ARScaleFactor : MonoBehaviour {
             arMarker.GetComponent<ARMarker>().NFTScale = 7;
 
         }
-        else if (activeScene == "book1Page3") {
+        else if (activeScene == "book1Page3" || activeScene == "book3Page2") {
 
             arMarker.GetComponent<ARMarker>().NFTScale = 5;
 

@@ -519,6 +519,12 @@ public class UserInterfaceButtons : MonoBehaviour
             
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0.0f);
         }
+
+        else if (activeScene == "book3Page2")
+        {
+
+            Model.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
         else { Model.transform.eulerAngles = new Vector3(0, 180, 0); }
 
         SetAnimationIdle();
@@ -585,7 +591,7 @@ public class UserInterfaceButtons : MonoBehaviour
             StartGame.GetComponent<Button>().interactable = true;
             //StartGame.SetActive(true);
 
-        if (!MovePanel.activeSelf && StopGame.activeSelf && activeScene != "book1Page3")
+        if ((!MovePanel.activeSelf && StopGame.activeSelf) && (activeScene != "book1Page3" && activeScene != "book3Page2" ))
             MovePanel.SetActive(true);
 
         //if (!RestartBtn.activeSelf)
