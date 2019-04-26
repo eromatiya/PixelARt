@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomSpawn : MonoBehaviour {
 
@@ -8,8 +9,16 @@ public class RandomSpawn : MonoBehaviour {
     public float spawnTime = 0.5f;            // How long between each spawn.
     public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 
+    Vector3 spawnScale;
+
+    Scene sceneName;
+    string activeScene; 
+
     // Use this for initialization
     void Start () {
+
+        sceneName = SceneManager.GetActiveScene();
+        activeScene = sceneName.name;
 
         InvokeRepeating("Spawn", spawnTime, spawnTime);
 
@@ -27,7 +36,6 @@ public class RandomSpawn : MonoBehaviour {
     {
 
         GameObject go;
-        Vector3 spawnScale;
         GameObject spawned;
 
         // Find a random index between zero and one less than the number of spawn points.
@@ -38,17 +46,24 @@ public class RandomSpawn : MonoBehaviour {
         {
             spawned = spawnObjects[Random.Range(0, spawnObjects.Length)];
             //spawnScale = spawned.transform.localScale;
-            if (spawned.name == "mushroom1")
+            if (spawned && activeScene == "book1Page3")
             {
-                spawnScale = new Vector3(15.0f, 15.0f, 15.0f);
-            }
-            else {
+                if (spawned.name == "mushroom1")
+                {
+                    spawnScale = new Vector3(15.0f, 15.0f, 15.0f);
+                }
+                else
+                {
 
-                spawnScale = new Vector3(3.0f, 3.0f, 3.0f);
+                    spawnScale = new Vector3(3.0f, 3.0f, 3.0f);
+                }
             }
+
             go = Instantiate(spawned, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
             go.transform.SetParent(spawnPoints[spawnPointIndex]);
-            go.transform.localScale = spawnScale;
+
+            if (activeScene == "book1Page3")
+                go.transform.localScale = spawnScale;
         }
     }
 }

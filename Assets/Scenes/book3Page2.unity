@@ -8457,7 +8457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObjects:
   - {fileID: 1036060134512338, guid: 8207a322b95c7f647926d303b893b4d7, type: 2}
-  - {fileID: 1036060134512338, guid: 8207a322b95c7f647926d303b893b4d7, type: 2}
+  - {fileID: 1518499138728514, guid: 053f3ea703a6d244f8f6c60c4a48fd67, type: 2}
   spawnTime: 3
   spawnPoints:
   - {fileID: 688284578}
@@ -19682,6 +19682,7 @@ GameObject:
   - component: {fileID: 721566842}
   - component: {fileID: 721566841}
   - component: {fileID: 721566845}
+  - component: {fileID: 721566846}
   m_Layer: 0
   m_Name: BoatParent
   m_TagString: Model
@@ -19767,6 +19768,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &721566846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 721566839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6debc42fa38520446a0a88f4ae58322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1000012903210382, guid: a6a622dcb6224014f923dc6743bf35d3, type: 2}
+  kaBoomSFX: {fileID: 8300000, guid: a8a10bceda13f874e9c5c501c41873d6, type: 3}
 --- !u!1 &733850314
 GameObject:
   m_ObjectHideFlags: 0
@@ -35595,7 +35609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1334370127
 Transform:
   m_ObjectHideFlags: 0
@@ -46737,7 +46751,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9866a92691696b346901281f2b329034, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6e7a386b95d16448affcb4dd8596c04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

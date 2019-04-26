@@ -53,7 +53,7 @@ public class ScoreScript : MonoBehaviour {
         }
         else
         {
-            if (activeScene != "book1Page3")
+            if (activeScene != "book1Page3" && activeScene != "book3Page2")
             {
                 Score += Time.deltaTime * DiffLvl;
             }

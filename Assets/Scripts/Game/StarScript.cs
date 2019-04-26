@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class StarScript : MonoBehaviour {
@@ -12,11 +13,19 @@ public class StarScript : MonoBehaviour {
     //x = 0.53 mid
     //x = 0.14 right
 
+    private Scene sceneName;
+    private string activeScene;
+
+
 	private static int starTotalGet;
 	private static int starOnPlay;
 
     // Use this for initialization
     void Start () {
+
+        sceneName = SceneManager.GetActiveScene();
+        activeScene = sceneName.name;
+        
 	
 		if (!PlayerPrefs.HasKey ("starTotal")) {
 
@@ -30,9 +39,11 @@ public class StarScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //Rotate Stars hehe for cooler effects
-        transform.Rotate(0, 120 * Time.deltaTime, 0);
-
+        if (activeScene != "book3Page2")
+        {
+            //Rotate Stars hehe for cooler effects
+            transform.Rotate(0, 120 * Time.deltaTime, 0);
+        }
     }
 
 

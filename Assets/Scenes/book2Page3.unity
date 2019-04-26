@@ -96907,6 +96907,7 @@ GameObject:
   - component: {fileID: 2138007684}
   - component: {fileID: 2138007683}
   - component: {fileID: 2138007682}
+  - component: {fileID: 2138007687}
   m_Layer: 9
   m_Name: ShipParent
   m_TagString: Model
@@ -96998,6 +96999,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2138007687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2138007680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6debc42fa38520446a0a88f4ae58322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1000012903210382, guid: a6a622dcb6224014f923dc6743bf35d3, type: 2}
+  kaBoomSFX: {fileID: 8300000, guid: a8a10bceda13f874e9c5c501c41873d6, type: 3}
 --- !u!1 &2141226539
 GameObject:
   m_ObjectHideFlags: 0
