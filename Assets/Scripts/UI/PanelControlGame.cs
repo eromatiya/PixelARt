@@ -77,6 +77,14 @@ public class PanelControlGame : MonoBehaviour {
             natureCanGroup = naturePanel.GetComponent<CanvasGroup>();
 
         }
+        else if (GameObject.Find("StructuresPanel"))
+        {
+
+            naturePanel = GameObject.Find("StructuresPanel");
+            natureAnim = naturePanel.GetComponent<Animator>();
+            natureCanGroup = naturePanel.GetComponent<CanvasGroup>();
+
+        }
         else {
 
             naturePanel = null;

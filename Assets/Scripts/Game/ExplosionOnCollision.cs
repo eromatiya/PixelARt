@@ -28,6 +28,7 @@ public class ExplosionOnCollision : MonoBehaviour {
     {
         if (obstacle.gameObject.tag == "Obstacle")
         {
+            Destroy(obstacle.gameObject);
             Explode();
         }
     }
