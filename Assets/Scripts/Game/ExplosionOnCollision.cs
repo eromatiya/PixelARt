@@ -14,6 +14,7 @@ public class ExplosionOnCollision : MonoBehaviour {
         gameObject.AddComponent<AudioSource>();
         kaBoomSrc.clip = kaBoomSFX;
         kaBoomSrc.playOnAwake = false;
+        kaBoomSrc.priority = 256; 
         kaBoomSrc.volume = 1.0f;
 
 
@@ -28,7 +29,7 @@ public class ExplosionOnCollision : MonoBehaviour {
     {
         if (obstacle.gameObject.tag == "Obstacle")
         {
-            Destroy(obstacle.gameObject);
+            if(obstacle.name.Contains("SeaMine")) { Destroy(obstacle.gameObject); }
             Explode();
         }
     }

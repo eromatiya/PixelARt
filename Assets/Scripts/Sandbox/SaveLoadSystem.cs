@@ -74,6 +74,12 @@ public class SaveLoadSystem : MonoBehaviour {
                 loadDirName = "Sandbox/PortPrefabs";
                 break;
 
+            case ("book3Page3"):
+
+                savefileName = "city.xml";
+                loadDirName = "Sandbox/CityPrefabs";
+                break;
+
 
 
 

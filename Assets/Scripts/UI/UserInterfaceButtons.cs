@@ -75,12 +75,21 @@ public class UserInterfaceButtons : MonoBehaviour
 	private bool togglingFLight = false;
 	private bool isExtendedTracking = false;
 
+    private Vector3 origLocScale;
+    private Vector3 origPosition;
+    private Vector3 origLocEuler;
+
     private Scene sceneName;
     private string activeScene;
     string currentAnimation="";
 
     void Start()
     {
+
+        origLocScale = Model.transform.localScale;
+        origPosition = Model.transform.position;
+        origLocEuler = Model.transform.localEulerAngles;
+
         sceneName = SceneManager.GetActiveScene();
         activeScene = sceneName.name;
     }
@@ -341,7 +350,7 @@ public class UserInterfaceButtons : MonoBehaviour
         freezeTexture();
         decARScale();
 
-        if (activeScene != "book1Page3")
+        if (activeScene != "book1Page3" && activeScene != "book3Page2")
         {
             sfxManager.GetComponent<ModelSoundManager>().PlayLoopSound();
         }
@@ -412,7 +421,7 @@ public class UserInterfaceButtons : MonoBehaviour
         if (Playing == false)
             Playing = true;
 
-        if (activeScene != "book1Page3")
+        if (activeScene != "book1Page3" && activeScene != "book3Page2")
         {
             sfxManager.GetComponent<ModelSoundManager>().PlayLoopSound();
         }
@@ -442,7 +451,7 @@ public class UserInterfaceButtons : MonoBehaviour
         PlayButton.SetActive(false);
         PauseButton.SetActive(true);
         
-        if (activeScene != "book1Page3")
+        if (activeScene != "book1Page3"  && activeScene != "book3Page2")
         {
 
             TileManager.GetComponent<TileManager>().KillTileChildren();
@@ -463,43 +472,36 @@ public class UserInterfaceButtons : MonoBehaviour
 
 
 
+        Model.transform.localPosition = origPosition;
+        Model.transform.localScale = origLocScale;
+        Model.transform.eulerAngles = new Vector3(0, 0, 0);
+
+
+
         if (activeScene == "book1Page1")
         {
-            Model.transform.position = new Vector3(0.0f, 0, 0);
-            Model.transform.localScale = new Vector3(1f, 1f, 1f);
-            Model.transform.eulerAngles = new Vector3(0, 0, 0);
             SetAnimation("isRunning");
         }
 
         else if (activeScene == "book1Page2")
         {
-
-            Model.transform.position = new Vector3(0.0f, 0.0982f, 0.0f);
-            Model.transform.localScale = new Vector3(1f, 1f, 1f);
-            Model.transform.eulerAngles = new Vector3(0, 0, 0);
             SetAnimation("isAttacking");
         }
-        else if (activeScene == "book1Page3") {
 
-            Model.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        else if (activeScene == "book1Page3")
+        {
+
             Model.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-
         }
-        else if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
+
+        else if (activeScene.Contains("book2") || activeScene == "book3Page1" || activeScene == "book3Page3")
         {
-
-            Model.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-            Model.transform.localScale = new Vector3(1f, 1f, 1f);
-            Model.transform.localEulerAngles = new Vector3(0, 0.0f, 180.0f);
-
-        }
-        else if (activeScene == "book3Page1" || activeScene == "book3Page3")
-        {
-
-            Model.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
             Model.transform.localEulerAngles = new Vector3(0, 0, 180);
 
         }
+        else { }
+
+       
 
 
     }
@@ -508,24 +510,9 @@ public class UserInterfaceButtons : MonoBehaviour
     private void gameOffModPos()
     {
         UIPanel.SetActive(true);
-        Model.transform.position = new Vector3(0, 0, 0);
-        Model.transform.localScale = new Vector3(1, 1, 1);
-
-        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
-        {
-            Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0);
-        }
-        else if (activeScene == "book3Page1" || activeScene == "book3Page3") {
-            
-            Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0.0f);
-        }
-
-        else if (activeScene == "book3Page2")
-        {
-
-            Model.transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else { Model.transform.eulerAngles = new Vector3(0, 180, 0); }
+        Model.transform.position = origPosition;
+        Model.transform.localScale = origLocScale;
+        Model.transform.localEulerAngles = origLocEuler;
 
         SetAnimationIdle();
     }
