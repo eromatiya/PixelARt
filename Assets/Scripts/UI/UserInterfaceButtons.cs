@@ -138,7 +138,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
         // transform.Rotate (0, -rotationSpeed * Time.deltaTime, 0);
 
-        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1")
+        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1" || activeScene == "book3Page3")
         {
 
             Model.transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
@@ -154,7 +154,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
 		// transform.Rotate (0, rotationSpeed * Time.deltaTime, 0);
 
-        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1")
+        if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3" || activeScene == "book3Page1" || activeScene == "book3Page3")
         {
 
             Model.transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
@@ -493,7 +493,7 @@ public class UserInterfaceButtons : MonoBehaviour
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 180.0f);
 
         }
-        else if (activeScene == "book3Page1")
+        else if (activeScene == "book3Page1" || activeScene == "book3Page3")
         {
 
             Model.transform.position = new Vector3(0.0f, 0.0f, 0.0f);
@@ -515,7 +515,7 @@ public class UserInterfaceButtons : MonoBehaviour
         {
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0);
         }
-        else if (activeScene == "book3Page1") {
+        else if (activeScene == "book3Page1" || activeScene == "book3Page3") {
             
             Model.transform.localEulerAngles = new Vector3(0, 0.0f, 0.0f);
         }
