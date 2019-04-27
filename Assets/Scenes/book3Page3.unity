@@ -419,7 +419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: AIRPORT
+  m_Text: 'TREE #1'
 --- !u!222 &19976549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 27753938}
   - component: {fileID: 27753939}
   m_Layer: 5
-  m_Name: SkylinePanel
+  m_Name: BuildingsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3841,7 +3841,7 @@ GameObject:
   - component: {fileID: 125938507}
   - component: {fileID: 125938506}
   m_Layer: 5
-  m_Name: PoliceDptBtn
+  m_Name: Tree2Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4610,7 +4610,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b172a1896f9f08948a92490793cc254e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef4b4eff88d32f24aad7026d69358f53, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4829,7 +4829,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6703ade17be9bba40a51d6d75a9e8084, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0890f153bdd642b49a6a92cf1bc37a86, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5031,7 +5031,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2488a3f744c89b844a60d9c55a9dc12e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94261f0b4cd8d0941a05677c9e2487d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5782,7 +5782,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 495d27654d751ed4d8d2b8eec620d5ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 589ca105623d17a429b09213b27dc63b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5867,7 +5867,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: URBAN
+  m_Text: TREES
 --- !u!222 &183663261
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6423,7 +6423,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2488a3f744c89b844a60d9c55a9dc12e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94261f0b4cd8d0941a05677c9e2487d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7254,7 +7254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: POLICE DEPT.
+  m_Text: 'TREE #2'
 --- !u!222 &228462761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7701,7 +7701,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CLOUD
+  m_Text: HYDRANT
 --- !u!222 &237922291
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8385,7 +8385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WATER TANK
+  m_Text: UMBRELLA
 --- !u!222 &276147074
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10482,7 +10482,7 @@ GameObject:
   - component: {fileID: 339031822}
   - component: {fileID: 339031821}
   m_Layer: 5
-  m_Name: SkyScraper2Btn
+  m_Name: CityHall2Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11200,7 +11200,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0308d4c3cdf12884492b00698cd42bde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a2e6dfb354420a449c21b36b2f9c507, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -12012,7 +12012,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #3'
+  m_Text: STORE
 --- !u!222 &387242876
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12447,66 +12447,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 396222141}
---- !u!1 &414756784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: a2aeffa6e81f47f48ab1d611e710b4c1, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 578169412}
-  - component: {fileID: 414756786}
-  - component: {fileID: 414756785}
-  m_Layer: 9
-  m_Name: street lamp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &414756785
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: a2aeffa6e81f47f48ab1d611e710b4c1,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 414756784}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &414756786
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: a2aeffa6e81f47f48ab1d611e710b4c1,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 414756784}
-  m_Mesh: {fileID: 4300000, guid: a2aeffa6e81f47f48ab1d611e710b4c1, type: 3}
 --- !u!1 &418551184
 GameObject:
   m_ObjectHideFlags: 0
@@ -13025,7 +12965,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b172a1896f9f08948a92490793cc254e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef4b4eff88d32f24aad7026d69358f53, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -13427,7 +13367,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ce9a9cc2316aa944388e61816bb5203b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fa28ea4b90262a49abeb72b6a632f2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -13776,7 +13716,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FERRIS WHEEL
+  m_Text: BILLBOARD
 --- !u!222 &450434420
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14373,79 +14313,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RenderCamera: {fileID: 1141416752}
   FreezeEnable: 0
---- !u!1 &479198823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: a464a80508ad2c24abbe1d2fe3713975, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 479198826}
-  - component: {fileID: 479198825}
-  - component: {fileID: 479198824}
-  m_Layer: 0
-  m_Name: hydrant
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &479198824
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: a464a80508ad2c24abbe1d2fe3713975,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479198823}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &479198825
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: a464a80508ad2c24abbe1d2fe3713975,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479198823}
-  m_Mesh: {fileID: 4300000, guid: a464a80508ad2c24abbe1d2fe3713975, type: 3}
---- !u!4 &479198826
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: a464a80508ad2c24abbe1d2fe3713975, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479198823}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07549948, y: 0.07549948, z: 0.07549948}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480825347
 GameObject:
   m_ObjectHideFlags: 0
@@ -14737,7 +14604,7 @@ GameObject:
   - component: {fileID: 505135416}
   - component: {fileID: 505135414}
   m_Layer: 5
-  m_Name: SkyScrapersButton
+  m_Name: BuildingsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16097,7 +15964,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: AIRPORT
+  m_Text: 'TREE #1'
 --- !u!222 &563068253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16175,7 +16042,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #4'
+  m_Text: SKYSCRAPER
 --- !u!222 &565705746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16568,20 +16435,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 577022938}
---- !u!4 &578169412
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: a2aeffa6e81f47f48ab1d611e710b4c1, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 414756784}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0755, y: 0.0755, z: 0.0755}
-  m_Children:
-  - {fileID: 1131747978}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583129311
 GameObject:
   m_ObjectHideFlags: 0
@@ -19391,7 +19244,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2488a3f744c89b844a60d9c55a9dc12e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94261f0b4cd8d0941a05677c9e2487d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -19674,7 +19527,7 @@ GameObject:
   - component: {fileID: 674871737}
   - component: {fileID: 674871735}
   m_Layer: 5
-  m_Name: BuildingsButton
+  m_Name: TreesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20050,7 +19903,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec5f33cbc588a38438aefdc10372805a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9c67e04bfdde7549af19fec248c5f49, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -20280,7 +20133,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 81e49214dad3d3f428a7c8cd3a52f899, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca15bab599a45354797584ba5cc1da22, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -20365,7 +20218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MISC
+  m_Text: PROPS
 --- !u!222 &685949253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22745,79 +22598,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799855837}
---- !u!1 &800803287
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: e558ba8f68137544cb1971ec562addb7, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 800803290}
-  - component: {fileID: 800803289}
-  - component: {fileID: 800803288}
-  m_Layer: 0
-  m_Name: Truck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &800803288
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: e558ba8f68137544cb1971ec562addb7,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800803287}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &800803289
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: e558ba8f68137544cb1971ec562addb7,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800803287}
-  m_Mesh: {fileID: 4300000, guid: e558ba8f68137544cb1971ec562addb7, type: 3}
---- !u!4 &800803290
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: e558ba8f68137544cb1971ec562addb7, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800803287}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.075499475, y: 0.075499475, z: 0.075499475}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &802154823
 GameObject:
   m_ObjectHideFlags: 0
@@ -23451,7 +23231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKYSCRAPERS
+  m_Text: BUILDINGS
 --- !u!222 &824981567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23818,7 +23598,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0bac44e25023bf1469a554e8f36f2968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2488a3f744c89b844a60d9c55a9dc12e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -24878,7 +24658,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b9fb40c2c53076d44991bd3a9aee703a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c5059704d45f90643beb2d4fe21713cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -25980,7 +25760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOSPITAL
+  m_Text: 'TREE #3'
 --- !u!222 &899632926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26004,7 +25784,7 @@ GameObject:
   - component: {fileID: 902685751}
   - component: {fileID: 902685750}
   m_Layer: 5
-  m_Name: AirportBtn
+  m_Name: Tree1Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26403,7 +26183,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b9fb40c2c53076d44991bd3a9aee703a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c5059704d45f90643beb2d4fe21713cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -26576,7 +26356,7 @@ GameObject:
   - component: {fileID: 930629730}
   - component: {fileID: 930629731}
   m_Layer: 5
-  m_Name: UrbanPanel
+  m_Name: TreesPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27345,7 +27125,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #1'
+  m_Text: MALL
 --- !u!222 &958600597
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27545,7 +27325,7 @@ GameObject:
   - component: {fileID: 975601490}
   - component: {fileID: 975601489}
   m_Layer: 5
-  m_Name: HouseBtn
+  m_Name: Tree4Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28619,7 +28399,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6e7e71b3598dfaf438373de601a696c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf673ebeadbac994dbfeba6026268996, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -28750,79 +28530,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005721000}
---- !u!1 &1011702508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 48b1c6175ceba5448bbf93b1bd81185e, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1011702511}
-  - component: {fileID: 1011702510}
-  - component: {fileID: 1011702509}
-  m_Layer: 0
-  m_Name: billboard 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1011702509
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 48b1c6175ceba5448bbf93b1bd81185e,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1011702508}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1011702510
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 48b1c6175ceba5448bbf93b1bd81185e,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1011702508}
-  m_Mesh: {fileID: 4300000, guid: 48b1c6175ceba5448bbf93b1bd81185e, type: 3}
---- !u!4 &1011702511
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 48b1c6175ceba5448bbf93b1bd81185e, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1011702508}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07549948, y: 0.07549948, z: 0.07549948}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1012565069
 GameObject:
   m_ObjectHideFlags: 0
@@ -29070,7 +28777,7 @@ GameObject:
   - component: {fileID: 1020839162}
   - component: {fileID: 1020839161}
   m_Layer: 5
-  m_Name: SkyScraper1Btn
+  m_Name: MallBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31020,7 +30727,7 @@ GameObject:
   - component: {fileID: 1068530881}
   - component: {fileID: 1068530880}
   m_Layer: 5
-  m_Name: WaterTankBtn
+  m_Name: UmbrellaBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31549,7 +31256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKYSCRAPERS
+  m_Text: BUILDINGS
 --- !u!222 &1079551726
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31627,7 +31334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKYSCRAPERS
+  m_Text: BUILDINGS
 --- !u!222 &1082634700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32074,7 +31781,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec5f33cbc588a38438aefdc10372805a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9c67e04bfdde7549af19fec248c5f49, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -32105,7 +31812,7 @@ GameObject:
   - component: {fileID: 1095685041}
   - component: {fileID: 1095685040}
   m_Layer: 5
-  m_Name: SkyScraper4Btn
+  m_Name: SkyScraperBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33133,7 +32840,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BLUE PLANET
+  m_Text: CITY HALL
 --- !u!222 &1116075148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33300,71 +33007,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125751032}
---- !u!1 &1131747977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1131747978}
-  - component: {fileID: 1131747979}
-  m_Layer: 9
-  m_Name: Spotlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1131747978
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1131747977}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.45, y: 7.98, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 578169412}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!108 &1131747979
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1131747977}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 0
-  m_Color: {r: 1, g: 0.82758623, b: 0.2647059, a: 1}
-  m_Intensity: 1
-  m_Range: 0.64
-  m_SpotAngle: 45
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 1
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &1133291560
 GameObject:
   m_ObjectHideFlags: 0
@@ -33709,79 +33351,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1151016041}
---- !u!1 &1151831121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 56161c992aa26af49a284532dde86fc4, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1151831124}
-  - component: {fileID: 1151831123}
-  - component: {fileID: 1151831122}
-  m_Layer: 0
-  m_Name: umbrella 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1151831122
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 56161c992aa26af49a284532dde86fc4,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151831121}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1151831123
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 56161c992aa26af49a284532dde86fc4,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151831121}
-  m_Mesh: {fileID: 4300000, guid: 56161c992aa26af49a284532dde86fc4, type: 3}
---- !u!4 &1151831124
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 56161c992aa26af49a284532dde86fc4, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151831121}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07549948, y: 0.07549948, z: 0.07549948}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155013513
 GameObject:
   m_ObjectHideFlags: 0
@@ -33928,7 +33497,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0308d4c3cdf12884492b00698cd42bde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0a2e6dfb354420a449c21b36b2f9c507, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -34497,7 +34066,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 495d27654d751ed4d8d2b8eec620d5ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 589ca105623d17a429b09213b27dc63b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -34777,7 +34346,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9770a8887a9792e459ed8080dec1d11e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52c2bbb68ab509d47a495f1bd3e18ef8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -36182,7 +35751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOSPITAL
+  m_Text: 'TREE #3'
 --- !u!222 &1248383357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36392,7 +35961,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9770a8887a9792e459ed8080dec1d11e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52c2bbb68ab509d47a495f1bd3e18ef8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -37039,7 +36608,7 @@ GameObject:
   - component: {fileID: 1270095799}
   - component: {fileID: 1270095798}
   m_Layer: 5
-  m_Name: HospitalBtn
+  m_Name: Tree3Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37345,7 +36914,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0bac44e25023bf1469a554e8f36f2968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2488a3f744c89b844a60d9c55a9dc12e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -38325,7 +37894,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c2ce0468db4846a45adc01a14642e445, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87fc3e36a350eab45a99d5ffc1374859, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -38340,79 +37909,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301588966}
---- !u!1 &1302386319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: accf3af25fffdf54b98334a45f0b9eeb, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1302386322}
-  - component: {fileID: 1302386321}
-  - component: {fileID: 1302386320}
-  m_Layer: 0
-  m_Name: shop 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1302386320
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: accf3af25fffdf54b98334a45f0b9eeb,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1302386319}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1302386321
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: accf3af25fffdf54b98334a45f0b9eeb,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1302386319}
-  m_Mesh: {fileID: 4300000, guid: accf3af25fffdf54b98334a45f0b9eeb, type: 3}
---- !u!4 &1302386322
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: accf3af25fffdf54b98334a45f0b9eeb, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1302386319}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.037773553, y: 0.03777355, z: 0.03777355}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310131109
 GameObject:
   m_ObjectHideFlags: 0
@@ -38555,7 +38051,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #1'
+  m_Text: MALL
 --- !u!222 &1311488260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39479,7 +38975,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FERRIS WHEEL
+  m_Text: BILLBOARD
 --- !u!222 &1341566448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41287,7 +40783,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 81e49214dad3d3f428a7c8cd3a52f899, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca15bab599a45354797584ba5cc1da22, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -41835,7 +41331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: URBAN
+  m_Text: TREES
 --- !u!222 &1419399801
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42714,7 +42210,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: POLICE DEPT.
+  m_Text: 'TREE #2'
 --- !u!222 &1435270908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42940,7 +42436,7 @@ GameObject:
   - component: {fileID: 1448833790}
   - component: {fileID: 1448833789}
   m_Layer: 5
-  m_Name: CloudBtn
+  m_Name: HydrantBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43457,79 +42953,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460872737}
---- !u!1 &1464883159
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: fa4468abb36f97f488aa5cdf3c0d9aaf, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1464883162}
-  - component: {fileID: 1464883161}
-  - component: {fileID: 1464883160}
-  m_Layer: 0
-  m_Name: Bus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1464883160
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: fa4468abb36f97f488aa5cdf3c0d9aaf,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1464883159}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1464883161
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: fa4468abb36f97f488aa5cdf3c0d9aaf,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1464883159}
-  m_Mesh: {fileID: 4300000, guid: fa4468abb36f97f488aa5cdf3c0d9aaf, type: 3}
---- !u!4 &1464883162
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: fa4468abb36f97f488aa5cdf3c0d9aaf, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1464883159}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07549948, y: 0.07549948, z: 0.07549948}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1481865167
 GameObject:
   m_ObjectHideFlags: 0
@@ -44303,7 +43726,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f2a0b1c7621243e4387aeb9bf6170eae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 754cd960451a93d4cb2afd5142e98646, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -44388,7 +43811,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CAR
+  m_Text: BENCH
 --- !u!222 &1509961613
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46414,7 +45837,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #4'
+  m_Text: SKYSCRAPER
 --- !u!222 &1569678395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46792,7 +46215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: URBAN
+  m_Text: TREES
 --- !u!222 &1580276764
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46857,7 +46280,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0bac44e25023bf1469a554e8f36f2968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 945d1d2803a36b04898d95196f8368e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -47009,7 +46432,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c2ce0468db4846a45adc01a14642e445, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87fc3e36a350eab45a99d5ffc1374859, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -49338,7 +48761,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOUSE
+  m_Text: 'TREE #4'
 --- !u!222 &1669649566
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49905,79 +49328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 906885014}
---- !u!1 &1689400228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 9e74d575871c8e0458127b919936c1a8, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1689400231}
-  - component: {fileID: 1689400230}
-  - component: {fileID: 1689400229}
-  m_Layer: 0
-  m_Name: mall a
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1689400229
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 9e74d575871c8e0458127b919936c1a8,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1689400228}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1689400230
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 9e74d575871c8e0458127b919936c1a8,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1689400228}
-  m_Mesh: {fileID: 4300000, guid: 9e74d575871c8e0458127b919936c1a8, type: 3}
---- !u!4 &1689400231
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 9e74d575871c8e0458127b919936c1a8, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1689400228}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02005583, y: 0.020055821, z: 0.020055821}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690171857
 GameObject:
   m_ObjectHideFlags: 0
@@ -50253,7 +49603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #2'
+  m_Text: CITY HALL
 --- !u!222 &1704123526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50331,7 +49681,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOUSE
+  m_Text: 'TREE #4'
 --- !u!222 &1707069597
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50455,79 +49805,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1715271454}
---- !u!1 &1725120074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 03d1b71f6a1989e4bac7fb90bed61c14, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1725120077}
-  - component: {fileID: 1725120076}
-  - component: {fileID: 1725120075}
-  m_Layer: 0
-  m_Name: tree 1 street
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &1725120075
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 03d1b71f6a1989e4bac7fb90bed61c14,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1725120074}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1725120076
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 03d1b71f6a1989e4bac7fb90bed61c14,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1725120074}
-  m_Mesh: {fileID: 4300000, guid: 03d1b71f6a1989e4bac7fb90bed61c14, type: 3}
---- !u!4 &1725120077
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 03d1b71f6a1989e4bac7fb90bed61c14, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1725120074}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07549948, y: 0.07549948, z: 0.07549948}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726465113
 GameObject:
   m_ObjectHideFlags: 0
@@ -51273,7 +50550,7 @@ GameObject:
   - component: {fileID: 1758088783}
   - component: {fileID: 1758088782}
   m_Layer: 5
-  m_Name: FerrisWheelBtn
+  m_Name: BillboardBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52617,7 +51894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WATER TANK
+  m_Text: UMBRELLA
 --- !u!222 &1810672220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52741,7 +52018,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ce9a9cc2316aa944388e61816bb5203b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fa28ea4b90262a49abeb72b6a632f2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -52972,7 +52249,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f2a0b1c7621243e4387aeb9bf6170eae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 754cd960451a93d4cb2afd5142e98646, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -55467,7 +54744,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MISC
+  m_Text: PROPS
 --- !u!222 &1921053682
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -55617,7 +54894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CLOUD
+  m_Text: HYDRANT
 --- !u!222 &1932257140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -55641,7 +54918,7 @@ GameObject:
   - component: {fileID: 1935724865}
   - component: {fileID: 1935724864}
   m_Layer: 5
-  m_Name: SkyScraper3Btn
+  m_Name: StoreBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56111,7 +55388,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SKYSCRAPER #3'
+  m_Text: STORE
 --- !u!222 &1952664795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -56948,19 +56225,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnThis:
-  - {fileID: 1970073341086656, guid: eba98f1ffb1a3774d93cc5eae8b054aa, type: 2}
-  - {fileID: 1507759234393662, guid: eade26aece6572645b1884c2bbd04eec, type: 2}
-  - {fileID: 1441412130826360, guid: 39eb5016ab2c27045be766570fa58a27, type: 2}
-  - {fileID: 1248120997999914, guid: 76fefb7e11382da408c6285a53c2e6b6, type: 2}
-  - {fileID: 1894630598216728, guid: 7eb7540b33afec845bf3dbd91f1c75c6, type: 2}
-  - {fileID: 1248140428801938, guid: 61206f8cb4baca94d8b476f6e4813253, type: 2}
-  - {fileID: 1683266824977384, guid: 853b90b255a322b46885462c2ba83945, type: 2}
-  - {fileID: 1403886112810324, guid: 930f8ff79a287054a9347b314bf7ad6d, type: 2}
-  - {fileID: 1206791107620068, guid: fd60a6e8bb1e0d3499fb51da555172dc, type: 2}
-  - {fileID: 1448055740455344, guid: 723fd90b5a22b224692b2e744327322b, type: 2}
-  - {fileID: 1366624318541424, guid: df9abaf7bdf241e4c8dd623d491eeb50, type: 2}
-  - {fileID: 1624854539941714, guid: c2edaa5e01751294ba7cc151bb1d6c17, type: 2}
-  - {fileID: 1297343182531368, guid: 3f419c494ab7c694fbfe4785a08d0d77, type: 2}
+  - {fileID: 1656305202068992, guid: 692125fae33431a43b4b56c8b18d01fe, type: 2}
+  - {fileID: 1662716037883516, guid: b92e553b60461e34bb2e0874257fcd20, type: 2}
+  - {fileID: 1826727159179834, guid: c94913859ec1b5b4bab4f6caf6844baa, type: 2}
+  - {fileID: 1267495595347876, guid: 1f37e131d8da3de46a700e2d2247fdc8, type: 2}
+  - {fileID: 1053334831996940, guid: 2824db90d5196e4489b5006fabb5f2e6, type: 2}
+  - {fileID: 1132735076967166, guid: 22ef13dcfbda17943a204c4661cf6f22, type: 2}
+  - {fileID: 1834332120617394, guid: d60f3b6744ab23545918f861c6f194ee, type: 2}
+  - {fileID: 1530827086742430, guid: 3afbb735f25eb264d8801d9a8a6004bb, type: 2}
+  - {fileID: 1594193465448028, guid: 0d5f387b514fc74488b1f86183caec2c, type: 2}
+  - {fileID: 1036359440725252, guid: 9535d257e1859324b9ef34fbf3c75e0a, type: 2}
+  - {fileID: 1116942216123284, guid: 5d82c4fbf61fd9745978739a98a55a3e, type: 2}
+  - {fileID: 1827898036489162, guid: 9525c9b41151e9442ac77566e765364a, type: 2}
+  - {fileID: 1006438014762232, guid: 5cf8a3ade941e3f4aa5755e2c75660a4, type: 2}
   spawnMode: 0
   deleteMode: 0
 --- !u!114 &1994048971
@@ -57553,7 +56830,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6703ade17be9bba40a51d6d75a9e8084, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0890f153bdd642b49a6a92cf1bc37a86, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -57653,7 +56930,7 @@ GameObject:
   - component: {fileID: 2032575400}
   - component: {fileID: 2032575399}
   m_Layer: 5
-  m_Name: MiscButton
+  m_Name: PropsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57883,7 +57160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CAR
+  m_Text: BENCH
 --- !u!222 &2037013271
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58602,79 +57879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Click: {fileID: 8300000, guid: 1fd371303a2e52e41ae295b742a3a526, type: 3}
---- !u!1 &2062449670
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 89754e06763140d40a25eeca922488dd, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2062449673}
-  - component: {fileID: 2062449672}
-  - component: {fileID: 2062449671}
-  m_Layer: 0
-  m_Name: building l 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!23 &2062449671
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 89754e06763140d40a25eeca922488dd,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2062449670}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 7eac7e6ce20f4c947aebcf88710554f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2062449672
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 89754e06763140d40a25eeca922488dd,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2062449670}
-  m_Mesh: {fileID: 4300000, guid: 89754e06763140d40a25eeca922488dd, type: 3}
---- !u!4 &2062449673
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 89754e06763140d40a25eeca922488dd, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2062449670}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.007, y: 0.007, z: 0.007}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067344440
 GameObject:
   m_ObjectHideFlags: 0
@@ -59508,7 +58712,7 @@ GameObject:
   - component: {fileID: 2092702303}
   - component: {fileID: 2092702302}
   m_Layer: 5
-  m_Name: CarBtn
+  m_Name: BenchBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59736,7 +58940,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6e7e71b3598dfaf438373de601a696c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf673ebeadbac994dbfeba6026268996, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -60302,7 +59506,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MISC
+  m_Text: PROPS
 --- !u!222 &2108464515
 CanvasRenderer:
   m_ObjectHideFlags: 0
