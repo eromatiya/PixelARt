@@ -6,14 +6,14 @@ using System.IO;
 
 public class OpenPDF : MonoBehaviour {
 
-    private string bookName = "ColoringBook";
+    private string bookName = "PixelARTBook";
     
     public void openBook()
     {
 
         if (getSDKInt() > 23) {
 
-            Application.OpenURL("http://facebook.com");
+            Application.OpenURL("https://drive.google.com/file/d/1vZ866PztIl7SIdshV_iGuDmvflS2Is9I/view");
                 
         }
         else
