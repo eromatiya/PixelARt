@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Ship1
+  m_Name: HelicopterChassis
   m_Shader: {fileID: 4800000, guid: b9e06bedacbabf74f8392262564b571f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 80df25088271e22409ec71deb9fa206b, type: 3}
+        m_Texture: {fileID: 2800000, guid: aab062a05ef7c574b9112310922f5ed1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,8 +65,8 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Outline: 0.03
-    - _OutlineWidth: 0.005
+    - _Outline: 0.007
+    - _OutlineWidth: 0.00075
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
