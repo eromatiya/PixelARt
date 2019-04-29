@@ -20,6 +20,7 @@ public class PanelControl : MonoBehaviour {
     public GameObject aboPanel;
     public GameObject HowToPopPanel;
 	public GameObject HowToPanel;
+	public GameObject secretPanel;
 
 
 	private AudioSource ClickSource { get { return GetComponent<AudioSource>(); } }
@@ -38,7 +39,7 @@ public class PanelControl : MonoBehaviour {
     Animator aboAnim;
 	Animator howToAnim;
 	Animator howToPopAnim;
-
+	Animator secretAnim;
 
     CanvasGroup staCanGroup;
     CanvasGroup galCanGroup;
@@ -52,7 +53,7 @@ public class PanelControl : MonoBehaviour {
     CanvasGroup aboCanGroup;
 	CanvasGroup howToPopGroup;
 	CanvasGroup howToCanGroup;
-
+	CanvasGroup secretCanGroup;
 
     #endregion //VARIABLES
 
@@ -98,7 +99,7 @@ public class PanelControl : MonoBehaviour {
         aboAnim = aboPanel.GetComponent<Animator>();
 		howToAnim = HowToPanel.GetComponent<Animator> ();
 		howToPopAnim = HowToPopPanel.GetComponent<Animator> ();
-
+		secretAnim = secretPanel.GetComponent<Animator> ();
     }
 
     private void GetCanvGroup()
@@ -115,6 +116,7 @@ public class PanelControl : MonoBehaviour {
         aboCanGroup = aboPanel.GetComponent<CanvasGroup>();
 		howToCanGroup = HowToPanel.GetComponent<CanvasGroup> ();
 		howToPopGroup = HowToPopPanel.GetComponent<CanvasGroup> ();
+		secretCanGroup = secretPanel.GetComponent<CanvasGroup> ();
 
     }
 
@@ -143,6 +145,7 @@ public class PanelControl : MonoBehaviour {
 		
 		if (howToPopGroup.alpha == 1)
 			PanelInstructPop ();
+
 
 		PanelExit ();
     }
@@ -202,14 +205,14 @@ public class PanelControl : MonoBehaviour {
 
     private void PanelExit()
     {
-
-        if(howToPopGroup.alpha == 0)
-            if (staCanGroup.alpha == 0)
-                if (galCanGroup.alpha == 0)
-                    if (helCanGroup.alpha == 0)
-                        if (setCanGroup.alpha == 0)
-                            if (exiCanGroup.alpha == 0)
-                                exiPanelAnim.Play("Panel In");
+		if (exiCanGroup.alpha == 0)
+			if(howToPopGroup.alpha == 0)
+            	if (staCanGroup.alpha == 0)
+                	if (galCanGroup.alpha == 0)
+                    	if (helCanGroup.alpha == 0)
+                        	if (setCanGroup.alpha == 0)
+                            	if (exiCanGroup.alpha == 0)
+                                	exiPanelAnim.Play("Panel In");
 
 
 
@@ -217,6 +220,14 @@ public class PanelControl : MonoBehaviour {
                             exiPanelAnim.Play("Panel Out");
 
     }
+
+	private void PanelSecret(){
+	
+		if (secretCanGroup.alpha == 1) {
+		
+			secretAnim.Play ("Panel Out");
+		}
+	}
 
     private void PanelInstructPop()
     {

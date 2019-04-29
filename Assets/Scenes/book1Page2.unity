@@ -7092,7 +7092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1229385474}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 44.997, y: -390.016, z: 0}
 --- !u!1 &300233912
 GameObject:
@@ -22597,7 +22597,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.85
   m_ColorTemperature: 6570
@@ -29597,8 +29597,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2126882350}
   - {fileID: 298901535}
+  - {fileID: 2126882350}
   - {fileID: 1201687998}
   - {fileID: 544852512}
   m_Father: {fileID: 1293429710}
@@ -52568,7 +52568,7 @@ Transform:
   m_Children:
   - {fileID: 1088088894}
   m_Father: {fileID: 1229385474}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &2126882351
 AudioListener:

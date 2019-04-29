@@ -6,7 +6,7 @@ using System.IO;
 
 public class OpenPDF : MonoBehaviour {
 
-    private string bookName = "PixelARTBook";
+	private string bookName = "PixelARtBook";
     
     public void openBook()
     {
