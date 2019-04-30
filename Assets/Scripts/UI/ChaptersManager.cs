@@ -81,9 +81,9 @@ public class ChaptersManager : MonoBehaviour {
 						secretPanAnim.Play ("Panel In");
 
 					}
+
 				}
-			
-			
+					
 			}
 		
 		}
@@ -94,37 +94,40 @@ public class ChaptersManager : MonoBehaviour {
 	
 		if (totalStars >= 750) {
 
-			chapter2Btn.interactable = true;
-			chapter2Txt.text = "CHAPTER 2";
-			chapter2HTxt.text = "CHAPTER 2";
-
-			chapter3Btn.interactable = true;
-			chapter3Txt.text = "CHAPTER 3";
-			chapter3HTxt.text = "CHAPTER 3";
+			Chapter2UI ("CHAPTER 2", true);
+			Chapter3UI ("CHAPTER 3", true);
 
 		} else if (totalStars >= 500 && totalStars < 750) {
 
-			chapter2Btn.interactable = true;
-			chapter2Txt.text = "CHAPTER 2";
-			chapter2HTxt.text = "CHAPTER 2";
 
-
-			chapter3Btn.interactable = false;
-			chapter3Txt.text = "LOCKED";
-			chapter3HTxt.text = "LOCKED";
+			Chapter2UI ("CHAPTER 2", true);
+			Chapter3UI ("LOCKED", false);
 
 		} else {
 
-			chapter3Btn.interactable = false;
-			chapter3Txt.text = "LOCKED";
-			chapter3HTxt.text = "LOCKED";
-			chapter2Btn.interactable = false;
-			chapter2Txt.text = "LOCKED";
-			chapter2HTxt.text = "LOCKED";
+			Chapter2UI ("LOCKED", false);
+			Chapter3UI ("LOCKED", false);
 		}
 
 
 
+	}
+
+
+	private void Chapter2UI(string status, bool interact){
+
+		chapter2Btn.interactable = interact;
+		chapter2Txt.text = status;
+		chapter2HTxt.text = status;
+
+	}
+
+	private void Chapter3UI(string status, bool interact){
+	
+		chapter3Btn.interactable = interact;
+		chapter3Txt.text = status;
+		chapter3HTxt.text = status;
+	
 	}
 
 	private bool IsPointerOverUIObject() {

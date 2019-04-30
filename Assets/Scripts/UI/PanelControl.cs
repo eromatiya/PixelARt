@@ -146,6 +146,8 @@ public class PanelControl : MonoBehaviour {
 		if (howToPopGroup.alpha == 1)
 			PanelInstructPop ();
 
+		if (secretCanGroup.alpha == 1)
+			PanelSecret ();
 
 		PanelExit ();
     }
@@ -205,14 +207,15 @@ public class PanelControl : MonoBehaviour {
 
     private void PanelExit()
     {
-		if (exiCanGroup.alpha == 0)
-			if(howToPopGroup.alpha == 0)
-            	if (staCanGroup.alpha == 0)
-                	if (galCanGroup.alpha == 0)
-                    	if (helCanGroup.alpha == 0)
-                        	if (setCanGroup.alpha == 0)
-                            	if (exiCanGroup.alpha == 0)
-                                	exiPanelAnim.Play("Panel In");
+		if(secretCanGroup.alpha == 0)
+			if (exiCanGroup.alpha == 0)
+				if(howToPopGroup.alpha == 0)
+            		if (staCanGroup.alpha == 0)
+                		if (galCanGroup.alpha == 0)
+                    		if (helCanGroup.alpha == 0)
+                        		if (setCanGroup.alpha == 0)
+                            		if (exiCanGroup.alpha == 0)
+                                		exiPanelAnim.Play("Panel In");
 
 
 
