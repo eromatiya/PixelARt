@@ -14,11 +14,16 @@ public class ModelSoundManager : MonoBehaviour {
     public AudioClip loopSource;
 
     private bool playRandomSounds = false;
+
     
     // Use this for initialization
     void Start () {
         
+		playRandomSounds = GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().isOnTarget;
+
+
         CallAudio();
+
 
 	}
 	

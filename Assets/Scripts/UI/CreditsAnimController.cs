@@ -5,10 +5,12 @@ using UnityEngine;
 public class CreditsAnimController : MonoBehaviour {
 
 	private Animator anim;
+	private float speed;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		speed = anim.speed;
 	}
 	
 	// Update is called once per frame
@@ -19,12 +21,13 @@ public class CreditsAnimController : MonoBehaviour {
 	public void StartCreditsScene(){
 
 		anim.Play ("CreditsAnim");
-		//anim.SetTrigger ("goToEmpty");
-
+		anim.speed = speed;
 	}
 
 	public void StopCreditsAnimScene(){
 
 		anim.Play ("CreditsAnim", -1, 0f);
+		anim.speed = 0;
+		anim.SetTrigger ("goToEmpty");
 	}
 }

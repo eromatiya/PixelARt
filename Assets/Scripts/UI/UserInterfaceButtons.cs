@@ -69,7 +69,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	private bool isSandbox = false;
 	private bool isInGame = false;
 	public bool Playing = false;
-    private bool isOnTarget = false;
+	public bool isOnTarget = false;
     private bool isAROn = true;
 	private bool togglingSandbox = false;
 	private bool togglingFLight = false;

@@ -22,6 +22,7 @@ public class PanelControl : MonoBehaviour {
 	public GameObject HowToPanel;
 	public GameObject secretPanel;
 	public GameObject creditsObject;
+	public GameObject unlockPanel;
 
 
 	private AudioSource ClickSource { get { return GetComponent<AudioSource>(); } }
@@ -42,6 +43,7 @@ public class PanelControl : MonoBehaviour {
 	Animator howToPopAnim;
 	Animator secretAnim;
 	Animator creditsAnim;
+	Animator unlockAnim;
 
     CanvasGroup staCanGroup;
     CanvasGroup galCanGroup;
@@ -56,6 +58,7 @@ public class PanelControl : MonoBehaviour {
 	CanvasGroup howToPopGroup;
 	CanvasGroup howToCanGroup;
 	CanvasGroup secretCanGroup;
+	CanvasGroup unlockCanGroup;
 
     #endregion //VARIABLES
 
@@ -103,6 +106,7 @@ public class PanelControl : MonoBehaviour {
 		howToPopAnim = HowToPopPanel.GetComponent<Animator> ();
 		secretAnim = secretPanel.GetComponent<Animator> ();
 		creditsAnim = creditsObject.GetComponent<Animator> ();
+		unlockAnim = unlockPanel.GetComponent<Animator> ();
     }
 
     private void GetCanvGroup()
@@ -120,6 +124,7 @@ public class PanelControl : MonoBehaviour {
 		howToCanGroup = HowToPanel.GetComponent<CanvasGroup> ();
 		howToPopGroup = HowToPopPanel.GetComponent<CanvasGroup> ();
 		secretCanGroup = secretPanel.GetComponent<CanvasGroup> ();
+		unlockCanGroup = unlockPanel.GetComponent<CanvasGroup> ();
 
     }
 
@@ -134,6 +139,10 @@ public class PanelControl : MonoBehaviour {
 	private void PanelManager()
     {
         //Call Functions
+
+		if (unlockCanGroup.alpha == 1)
+			PanelUnlock ();
+
 		if(staCanGroup.alpha == 1)
         	PanelStart();
         
@@ -152,6 +161,7 @@ public class PanelControl : MonoBehaviour {
 		if (secretCanGroup.alpha == 1)
 			PanelSecret ();
 
+
 		PanelExit ();
     }
 
@@ -169,12 +179,17 @@ public class PanelControl : MonoBehaviour {
         if (chaThreeCanGroup.alpha == 1)
             chaThreeAnim.Play("Panel Out");
 
-        if (chaOneCanGroup.alpha == 0)
-            if (chaTwoCanGroup.alpha == 0)
-                if (chaThreeCanGroup.alpha == 0)
-                    if(staCanGroup.alpha == 1)
-                        staPanelAnim.Play("Panel Out");
-        
+		if (chaOneCanGroup.alpha == 0) {
+			if (chaTwoCanGroup.alpha == 0) {
+				if (chaThreeCanGroup.alpha == 0) {
+					if (unlockCanGroup.alpha == 0) {
+						if (staCanGroup.alpha == 1) {
+							staPanelAnim.Play ("Panel Out");
+						}
+					}
+				}
+			}
+		}
     }
 
     private void PanelGallery()
@@ -237,6 +252,13 @@ public class PanelControl : MonoBehaviour {
 		}
 	}
 
+	private void PanelUnlock(){
+	
+		if (unlockCanGroup.alpha == 1) {
+		
+			unlockAnim.Play ("Panel Out");
+		}
+	}
     private void PanelInstructPop()
     {
 		if (howToPopGroup.alpha == 1)

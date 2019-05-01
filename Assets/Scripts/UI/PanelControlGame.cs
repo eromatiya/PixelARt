@@ -32,6 +32,7 @@ public class PanelControlGame : MonoBehaviour {
 	Animator saveAnim;
 	Animator loadAnim;
 	Animator delAnim;
+	Animator helpAnim;
     Animator natureAnim;
 
     CanvasGroup optCanGroup;
@@ -42,6 +43,7 @@ public class PanelControlGame : MonoBehaviour {
 	CanvasGroup saveCanGroup;
 	CanvasGroup loadCanGroup;
 	CanvasGroup delCanGroup;
+	CanvasGroup helpCanGroup;
     CanvasGroup natureCanGroup;
 
     private Scene sceneName;
@@ -120,6 +122,7 @@ public class PanelControlGame : MonoBehaviour {
 		saveCanGroup = savePanel.GetComponent<CanvasGroup> ();
 		loadCanGroup = loadPanel.GetComponent<CanvasGroup> ();
 		delCanGroup = delPanel.GetComponent<CanvasGroup> ();
+		helpCanGroup = HelpPanel.GetComponent<CanvasGroup> ();
     }
 
     public void AnimGetComp()
@@ -132,6 +135,7 @@ public class PanelControlGame : MonoBehaviour {
 		saveAnim = savePanel.GetComponent<Animator> ();
 		loadAnim = loadPanel.GetComponent<Animator> ();
 		delAnim = delPanel.GetComponent<Animator> ();
+		helpAnim = HelpPanel.GetComponent<Animator> ();
 	}
 
 
@@ -167,6 +171,11 @@ public class PanelControlGame : MonoBehaviour {
 
 		}
 
+		if (helpCanGroup.alpha == 1) {
+		
+			helpAnim.Play ("Panel Out");
+		}
+
         if (naturePanel && natureCanGroup.alpha == 1) {
 
             natureAnim.Play("Panel Out");
@@ -197,17 +206,16 @@ public class PanelControlGame : MonoBehaviour {
         {   
             
 		
-			if (!gOverScreen.activeSelf) {
+			if (helpCanGroup.alpha == 0) {
 				if (optCanGroup.alpha == 0) {
 					if (invCanGroup.alpha == 0) {
                         if (!naturePanel || natureCanGroup.alpha == 0) {
                             if (saveCanGroup.alpha == 0) {
                                 if (loadCanGroup.alpha == 0) {
                                     if (delCanGroup.alpha == 0) {
-                                        if (!HelpPanel.activeSelf) {
                                             optAnim.Play("Panel In");
                                             GameObject.FindGameObjectWithTag("Controller").GetComponent<UserInterfaceButtons>().PauseGame();
-                                        }
+                                        
                                     }
                                 }
                             }
@@ -222,9 +230,9 @@ public class PanelControlGame : MonoBehaviour {
 
         }
 
- 
+ /*
         if (HelpPanel.activeSelf)
-            HelpPanel.SetActive(false);
+            HelpPanel.SetActive(false); */
 
 		if (gOverScreen.activeSelf) {
 

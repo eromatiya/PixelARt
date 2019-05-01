@@ -8,7 +8,9 @@ using UnityEngine;
 public class RunOnce : MonoBehaviour {
 
     public GameObject howToPopPanel;
+	public GameObject unlockPanel;
 	Animator howToPopAnimz;
+	Animator unlockPanelAnim;
 
 	public GameObject Splash;
 
@@ -34,6 +36,8 @@ public class RunOnce : MonoBehaviour {
 			PlayerPrefs.Save();
 		}
 
+		unlockPanelAnim = unlockPanel.GetComponent<Animator> ();
+
     }
 	
 	// Update is called once per frame
@@ -44,5 +48,18 @@ public class RunOnce : MonoBehaviour {
 	private void OnApplicationQuit()
 	{
 		PlayerPrefs.SetInt("firstSplash", 0);
+	}
+
+	public void UnlockInfo(){
+	
+	
+		if (!PlayerPrefs.HasKey ("unlockToggle") || PlayerPrefs.GetInt("unlockToggle") != 1) {
+		
+			unlockPanelAnim.Play ("Panel In");
+			PlayerPrefs.SetInt ("unlockToggle", 1);
+			PlayerPrefs.Save ();
+
+		}
+
 	}
 }
