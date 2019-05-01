@@ -21,6 +21,7 @@ public class PanelControl : MonoBehaviour {
     public GameObject HowToPopPanel;
 	public GameObject HowToPanel;
 	public GameObject secretPanel;
+	public GameObject creditsObject;
 
 
 	private AudioSource ClickSource { get { return GetComponent<AudioSource>(); } }
@@ -40,6 +41,7 @@ public class PanelControl : MonoBehaviour {
 	Animator howToAnim;
 	Animator howToPopAnim;
 	Animator secretAnim;
+	Animator creditsAnim;
 
     CanvasGroup staCanGroup;
     CanvasGroup galCanGroup;
@@ -100,6 +102,7 @@ public class PanelControl : MonoBehaviour {
 		howToAnim = HowToPanel.GetComponent<Animator> ();
 		howToPopAnim = HowToPopPanel.GetComponent<Animator> ();
 		secretAnim = secretPanel.GetComponent<Animator> ();
+		creditsAnim = creditsObject.GetComponent<Animator> ();
     }
 
     private void GetCanvGroup()
@@ -182,8 +185,10 @@ public class PanelControl : MonoBehaviour {
 
     private void PanelHelp()
     {
-        if (aboCanGroup.alpha == 1)
-            aboAnim.Play("Panel Out");
+		if (aboCanGroup.alpha == 1) {
+			aboAnim.Play ("Panel Out");
+			creditsAnim.Play ("CreditsAnim", -1, 0f);
+		}
 
 		if (howToCanGroup.alpha == 1)
 			howToAnim.Play ("Panel Out");
