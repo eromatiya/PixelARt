@@ -14,12 +14,12 @@ public class ModelSoundManager : MonoBehaviour {
     public AudioClip loopSource;
 
     private bool playRandomSounds = false;
+	private bool isOnMarker;
 
     
     // Use this for initialization
     void Start () {
         
-		playRandomSounds = GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().isOnTarget;
 
 
         CallAudio();
@@ -42,8 +42,10 @@ public class ModelSoundManager : MonoBehaviour {
 
     public void PlayRandomSFX()
     {
-        if (playRandomSounds)
+		Debug.Log ("Play random false");
+        if (playRandomSounds == true)
         {
+			Debug.Log ("Play Random true");
             randomSound = gameObject.GetComponent<AudioSource>();
             randomSound.clip = audioSources[Random.Range(0, audioSources.Length)];
             randomSound.Play();
@@ -78,7 +80,12 @@ public class ModelSoundManager : MonoBehaviour {
     public void StopLoopSound() {
 
         if(loopSound) loopSound.Stop();
-        playRandomSounds = true;
+
+		isOnMarker = GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().isOnTarget;
+
+		if (isOnMarker) {
+			playRandomSounds = true;
+		}
     }
 
     public void EnableRandomSound() {
