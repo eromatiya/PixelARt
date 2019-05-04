@@ -603,8 +603,11 @@ public class UserInterfaceButtons : MonoBehaviour
             StartGame.GetComponent<Button>().interactable = true;
             //StartGame.SetActive(true);
 
-        if ((!MovePanel.activeSelf && StopGame.activeSelf) && (activeScene != "book1Page3" && activeScene != "book3Page2" ))
-            MovePanel.SetActive(true);
+		if ((!MovePanel.activeSelf && StopGame.activeSelf) && (activeScene != "book1Page3" && activeScene != "book3Page2")) {
+			if (PlayerPrefs.GetString ("controlMode") == "dPad") {
+				MovePanel.SetActive (true);
+			}
+		}
 
         if (RestartBtn.GetComponent<Button>().interactable == false)
             RestartBtn.GetComponent<Button>().interactable = true;

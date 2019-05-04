@@ -20,7 +20,7 @@ public class ModelMove : MonoBehaviour
     
 
 	private bool isPlaying;
-
+	public bool isTouchMode = false;
 
     // Update is called once per frame
     private void Update()
@@ -50,7 +50,7 @@ public class ModelMove : MonoBehaviour
             if ((endTouchPosition.x > startTouchPosition.x) && ((transform.position.x >= positionRight) && (transform.position.x < positionLeft - 0.1f)))
             {                
                 //(transform.position.x <= positionLeft) && (transform.position.x > positionRight)
-                if (isPlaying) {
+                if (isPlaying && isTouchMode) {
 					StartCoroutine (Move ("left"));
 					Debug.Log ("left");
 				}
