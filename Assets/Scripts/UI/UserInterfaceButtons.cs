@@ -43,6 +43,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject toggleFlashLightBtn;
     public GameObject modelTexture;
     public GameObject sfxManager;
+	public GameObject gameArena;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -550,6 +551,21 @@ public class UserInterfaceButtons : MonoBehaviour
 			PlayButton.GetComponent<Button> ().interactable = false;
 		}
 
+		if (Environment.activeSelf) {
+		
+			Environment.SetActive (false);
+		
+		}
+
+
+		if (gameArena) {
+
+			if (gameArena.activeSelf && StopGame.activeSelf) {
+
+				gameArena.SetActive (false);
+			}
+		}
+
         if (sandboxManager.activeSelf) sandboxManager.SetActive(false);
       
         
@@ -581,9 +597,6 @@ public class UserInterfaceButtons : MonoBehaviour
         if ((!MovePanel.activeSelf && StopGame.activeSelf) && (activeScene != "book1Page3" && activeScene != "book3Page2" ))
             MovePanel.SetActive(true);
 
-        //if (!RestartBtn.activeSelf)
-        //    RestartBtn.SetActive(true);
-
         if (RestartBtn.GetComponent<Button>().interactable == false)
             RestartBtn.GetComponent<Button>().interactable = true;
 
@@ -594,9 +607,23 @@ public class UserInterfaceButtons : MonoBehaviour
 			sandBoxOnButton.GetComponent<Button> ().interactable = true;
 		}
 
+
 		gizmoCamera.GetComponent<Camera> ().enabled = true;
 
         if (!sandboxManager.activeSelf) sandboxManager.SetActive(true);
+
+		if (!Environment.activeSelf && StopGame.activeSelf) {
+
+			Environment.SetActive (true);
+		}
+
+		if (gameArena) {
+		
+			if (!gameArena.activeSelf && StopGame.activeSelf) {
+			
+				gameArena.SetActive (true);
+			}
+		}
 
         sfxManager.GetComponent<ModelSoundManager>().EnableRandomSound();
 
