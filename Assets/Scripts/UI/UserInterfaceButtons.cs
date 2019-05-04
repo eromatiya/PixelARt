@@ -44,6 +44,7 @@ public class UserInterfaceButtons : MonoBehaviour
     public GameObject modelTexture;
     public GameObject sfxManager;
 	public GameObject gameArena;
+	public GameObject analogController;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -565,6 +566,14 @@ public class UserInterfaceButtons : MonoBehaviour
 				gameArena.SetActive (false);
 			}
 		}
+		if (analogController) {
+		
+			if (analogController.activeSelf && StopGame.activeSelf) {
+			
+				analogController.SetActive (false);
+			}
+
+		}
 
         if (sandboxManager.activeSelf) sandboxManager.SetActive(false);
       
@@ -612,9 +621,10 @@ public class UserInterfaceButtons : MonoBehaviour
 
         if (!sandboxManager.activeSelf) sandboxManager.SetActive(true);
 
-		if (!Environment.activeSelf && StopGame.activeSelf) {
-
-			Environment.SetActive (true);
+		if (!Environment.activeSelf && StopGame.activeSelf ) {
+			if (activeScene != "book1Page3" && activeScene != "book3Page2"){
+				Environment.SetActive (true);	
+			}
 		}
 
 		if (gameArena) {
@@ -622,6 +632,15 @@ public class UserInterfaceButtons : MonoBehaviour
 			if (!gameArena.activeSelf && StopGame.activeSelf) {
 			
 				gameArena.SetActive (true);
+			}
+		}
+
+
+		if (analogController) {
+
+			if (!analogController.activeSelf && StopGame.activeSelf) {
+
+				analogController.SetActive (true);
 			}
 		}
 
