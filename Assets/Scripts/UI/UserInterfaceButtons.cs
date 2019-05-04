@@ -451,11 +451,12 @@ public class UserInterfaceButtons : MonoBehaviour
         Model.GetComponent<HitObstacle>().isOver = false;
         gameObject.GetComponent<ScoreScript>().ResetScores();
         PlayButton.SetActive(false);
-        PauseButton.SetActive(true);
-        
-        if (activeScene != "book1Page3"  && activeScene != "book3Page2")
-        {
 
+		//if(activeScene != "book1Page3"  && activeScene != "book3Page2")
+			
+        if (activeScene != "book1Page3" && activeScene != "book3Page2")
+        {
+			PauseButton.SetActive(true);
             TileManager.GetComponent<TileManager>().KillTileChildren();
             Environment.GetComponent<RunZ>().StartGame();
             Environment.GetComponent<RunZ>().ResetSpeed();
@@ -641,7 +642,7 @@ public class UserInterfaceButtons : MonoBehaviour
 
 		if (analogController) {
 
-			if (!analogController.activeSelf && StopGame.activeSelf) {
+			if (!analogController.activeSelf && StopGame.activeSelf && PlayerPrefs.GetString("controlMode") == "dPad") {
 
 				analogController.SetActive (true);
 			}

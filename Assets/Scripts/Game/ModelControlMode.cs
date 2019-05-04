@@ -10,7 +10,7 @@ public class ModelControlMode : MonoBehaviour {
 
 	public GameObject model;
 	public GameObject gamePad;
-
+	public GameObject gameTerrain;
 
 	public Image controlImageBtn;
 	public Image controlImageBtnH;
@@ -132,6 +132,18 @@ public class ModelControlMode : MonoBehaviour {
 				gamePad.SetActive (true);
 			}
 
+		} else {
+		
+			//GAME ARENA MODE
+
+			model.GetComponent<TapToMove> ().isTouchMode = false;
+		
+			if (!gamePad.activeSelf && StopBtnClone.activeSelf) {
+
+				gamePad.SetActive (true);
+			}
+		
+			ToggleTerrainData (false);
 		}
 
 
@@ -148,7 +160,21 @@ public class ModelControlMode : MonoBehaviour {
 			if (gamePad.activeSelf) {
 			
 				gamePad.SetActive (false);
-			}			
+			}
+
+
+		} else {
+		
+			//GAME ARENA MODE
+		
+			model.GetComponent<TapToMove> ().isTouchMode = true;
+
+			if (gamePad.activeSelf) {
+
+				gamePad.SetActive (false);
+			}	
+
+			ToggleTerrainData (true);
 		}
 
 
@@ -161,10 +187,19 @@ public class ModelControlMode : MonoBehaviour {
 		if (PlayerPrefs.GetString ("controlMode") == "dPad") {
 		
 			DPadMode ();
+
 		} else {
 		
 			TouchMode ();
 		}
 
+	}
+
+
+	private void ToggleTerrainData(bool toggle){
+
+		if (gameTerrain) {
+			gameTerrain.GetComponent<TerrainCollider> ().enabled = toggle;
+		}
 	}
 }

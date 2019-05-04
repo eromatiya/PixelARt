@@ -61,6 +61,7 @@ public class RandomSpawn : MonoBehaviour {
 
             go = Instantiate(spawned, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
             go.transform.SetParent(spawnPoints[spawnPointIndex]);
+			go.transform.eulerAngles = new Vector3 (0.0f, 180.0f, 0.0f);
 
             if (activeScene == "book1Page3")
                 go.transform.localScale = spawnScale;
