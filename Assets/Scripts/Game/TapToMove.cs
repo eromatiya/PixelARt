@@ -99,6 +99,12 @@ public class TapToMove : MonoBehaviour {
 					enableLoop = true;
 				}
 
+				if (sceneName == "book3Page2" && !enableLoop)
+				{
+					GameObject.FindGameObjectWithTag("SFXController").GetComponent<ModelSoundManager>().PlayLoopSound();
+					enableLoop = true;
+				}
+
 			}
 		
 			//set the movement indicator flag to false if the endPoint and current gameobject position are equal
@@ -109,6 +115,13 @@ public class TapToMove : MonoBehaviour {
 				if (sceneName == "book1Page3" && enableLoop)
 				{
 					SetAnimationIdle();
+					GameObject.FindGameObjectWithTag("SFXController").GetComponent<ModelSoundManager>().StopLoopSound();
+					enableLoop = false;
+				}
+
+				if (sceneName == "book3Page2" && enableLoop)
+				{
+
 					GameObject.FindGameObjectWithTag("SFXController").GetComponent<ModelSoundManager>().StopLoopSound();
 					enableLoop = false;
 				}

@@ -33940,7 +33940,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7b648a61645e61c4b9e73a30178a15e1, type: 3}
+    m_Font: {fileID: 12800000, guid: 297a5c2dd4717034ba264a0a31aa9dae, type: 3}
     m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
@@ -33955,15 +33955,11 @@ MonoBehaviour:
   m_Text: '
 
 
-
     Each buttons on this panel has its own functionality. The first two button from
     the top can shrink and enlarge the AR model. The third and fourth button can rotate
     the model clockwise and counter-clockwise. The flashlight button can turn on/off
     the camera''s torch. Lastly, the leaf button can hide/show the sandbox. Note that
     you must have a saved sandbox file in order to show it.
-
-
-
 
 
 
@@ -33978,11 +33974,7 @@ MonoBehaviour:
 
 
 
-
-
     You can disable/enable Augmented Reality functionality using these buttons.
-
-
 
 
 
@@ -34000,12 +33992,7 @@ MonoBehaviour:
     GAME MODE
 
 
-
-
     This button stops PLAY MODE.
-
-
-
 
 
 
@@ -34024,17 +34011,13 @@ MonoBehaviour:
 
 
 
-
-
     You can use these buttons and directional pad to navigate while playing. You can
-    also swipe your screen to navigate.
-
+    also change the settings to use touch functionality.
 
 
 
 
     SANDBOX MODE
-
 
 
 
@@ -34053,13 +34036,9 @@ MonoBehaviour:
 
 
 
-
-
-
     This panel will help you to save/delete your environment. The first button will
     save your progress. The 2nd will reload your saved environment. Lastly, the the
     third button will delete all objects. Good for fresh start.
-
 
 
 
