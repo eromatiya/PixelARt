@@ -12,6 +12,7 @@ public class ModelMove : MonoBehaviour
     private float moveTime;
     private float moveDuration = 0.1f;
 
+	public GameObject shipAscended;
 
     // positionMid = -0.0f
     private float positionLeft = 0.25f;
@@ -23,6 +24,11 @@ public class ModelMove : MonoBehaviour
 	public bool isTouchMode = false;
 
     // Update is called once per frame
+	private void Start(){
+
+
+	}
+
     private void Update()
     {
 		//Updates bool variable isPlaying from "Controller" Tag - referenced in GameControl GO
@@ -43,6 +49,11 @@ public class ModelMove : MonoBehaviour
                 if (isPlaying) {
 					StartCoroutine (Move ("right"));
 					Debug.Log ("right");
+
+					if (shipAscended) {
+					
+						shipAscended.GetComponent<ShipAscend> ().RightShipAnim ();
+					}
 				}
             }
 
@@ -53,6 +64,12 @@ public class ModelMove : MonoBehaviour
                 if (isPlaying && isTouchMode) {
 					StartCoroutine (Move ("left"));
 					Debug.Log ("left");
+
+
+					if (shipAscended) {
+
+						shipAscended.GetComponent<ShipAscend> ().LeftShipAnim ();
+					}
 				}
             }
         }

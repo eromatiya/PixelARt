@@ -401,6 +401,14 @@ public class UserInterfaceButtons : MonoBehaviour
             sandBoxOnButton.GetComponent<Button>().interactable = true;
         }
 
+
+		if (gameArena) {
+		
+			if (gameArena.activeSelf) {
+			
+				gameArena.SetActive (false);
+			}
+		}
         //Control model animations
         PlayPauseAnim();
 
