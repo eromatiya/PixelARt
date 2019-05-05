@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 public class ChaptersManager : MonoBehaviour {
 
 	public GameObject secretPanel;
-	Animator secretPanAnim;
-	CanvasGroup secretPanCanGroup;
+	private Animator secretPanAnim;
+	private CanvasGroup secretPanCanGroup;
 
 	public Button chapter2Btn;
 	public Button chapter3Btn;

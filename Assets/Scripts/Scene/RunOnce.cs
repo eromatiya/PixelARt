@@ -48,18 +48,25 @@ public class RunOnce : MonoBehaviour {
 	private void OnApplicationQuit()
 	{
 		PlayerPrefs.SetInt("firstSplash", 0);
+		PlayerPrefs.SetInt("showUnlockInfo", 0);
 	}
 
 	public void UnlockInfo(){
 	
-	
-		if (!PlayerPrefs.HasKey ("unlockToggle") || PlayerPrefs.GetInt("unlockToggle") != 1) {
+		if (!PlayerPrefs.HasKey ("showUnlockInfo") || PlayerPrefs.GetInt ("showUnlockInfo") != 1) {
+
+
+			if (!PlayerPrefs.HasKey ("unlockToggle") || PlayerPrefs.GetInt ("unlockToggle") < 5) {
 		
-			unlockPanelAnim.Play ("Panel In");
-			PlayerPrefs.SetInt ("unlockToggle", 1);
-			PlayerPrefs.Save ();
+				int count;
+				count = PlayerPrefs.GetInt ("unlockToggle");
+				unlockPanelAnim.Play ("Panel In");
+				PlayerPrefs.SetInt ("unlockToggle", count + 1);
+				PlayerPrefs.Save ();
 
+			}
+
+			PlayerPrefs.SetInt ("showUnlockInfo", 1);
 		}
-
 	}
 }
