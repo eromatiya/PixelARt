@@ -82,8 +82,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.313168, y: 0, z: 10.420738}
+  m_Center: {x: -0.1527319, y: -0.5, z: 0.022389412}
 --- !u!114 &114698294050150806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +132,7 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 2100000, guid: a8934a77ad83e0f4a9e9d40b3917880b, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: 8a7bd51b940f63a49a84e7bcbb9d7d0a, type: 2}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 0.0512
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
