@@ -52,21 +52,24 @@ public class RunOnce : MonoBehaviour {
 	}
 
 	public void UnlockInfo(){
-	
-		if (!PlayerPrefs.HasKey ("showUnlockInfo") || PlayerPrefs.GetInt ("showUnlockInfo") != 1) {
-
-
-			if (!PlayerPrefs.HasKey ("unlockToggle") || PlayerPrefs.GetInt ("unlockToggle") < 5) {
 		
-				int count;
-				count = PlayerPrefs.GetInt ("unlockToggle");
-				unlockPanelAnim.Play ("Panel In");
-				PlayerPrefs.SetInt ("unlockToggle", count + 1);
-				PlayerPrefs.Save ();
+		if (PlayerPrefs.GetInt ("starTotal") < 500) {
+			
+			if (!PlayerPrefs.HasKey ("showUnlockInfo") || PlayerPrefs.GetInt ("showUnlockInfo") != 1) {
 
+
+				if (!PlayerPrefs.HasKey ("unlockToggle") || PlayerPrefs.GetInt ("unlockToggle") < 5) {
+		
+					int count;
+					count = PlayerPrefs.GetInt ("unlockToggle");
+					unlockPanelAnim.Play ("Panel In");
+					PlayerPrefs.SetInt ("unlockToggle", count + 1);
+					PlayerPrefs.Save ();
+
+				}
+
+				PlayerPrefs.SetInt ("showUnlockInfo", 1);
 			}
-
-			PlayerPrefs.SetInt ("showUnlockInfo", 1);
 		}
 	}
 }
