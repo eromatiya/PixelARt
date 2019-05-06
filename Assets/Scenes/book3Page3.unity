@@ -4759,7 +4759,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 315fd3fa6c25dd44c886971bd75dda5f, type: 2}
+  - {fileID: 2100000, guid: 86ceb0cf38b79bb4a80011cd7ffbdca0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18890,7 +18890,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 315fd3fa6c25dd44c886971bd75dda5f, type: 2}
+  - {fileID: 2100000, guid: 86ceb0cf38b79bb4a80011cd7ffbdca0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32615,8 +32615,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 677077843}
   m_HandleRect: {fileID: 677077842}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.12438736
+  m_Value: 0.99999994
+  m_Size: 0.124387376
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -57655,6 +57655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d363ba6832442478707e915f8c435d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipAscended: {fileID: 0}
   isTouchMode: 0
 --- !u!114 &2138007684
 MonoBehaviour:
