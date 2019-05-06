@@ -354,5 +354,26 @@ public class PanelControlGame : MonoBehaviour {
         }
 
     }
+
+	public void CloseAllPanel(){
+	
+		if (chap1CanGroup.alpha == 1) {
+		
+			chap1Anim.Play ("Panel Out");
+		}
+
+		if (chap2CanGroup.alpha == 1) {
+
+			chap1Anim.Play ("Panel Out");
+		}
+
+		if (chap3CanGroup.alpha == 1) {
+
+			chap1Anim.Play ("Panel Out");
+		}
+
+		pagesAnim.Play ("Panel Out");
+		optAnim.Play ("Panel Out");
+	}
 		
 }
