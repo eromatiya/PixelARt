@@ -21,6 +21,13 @@ public class PanelControlGame : MonoBehaviour {
 	public GameObject delPanel;
     GameObject naturePanel;
 
+	public GameObject pagesPanel;
+	public GameObject chapter1Panel;
+	public GameObject chapter2Panel;
+	public GameObject chapter3Panel;
+
+
+
 	private AudioSource ClickSource { get { return GetComponent<AudioSource>(); } }
 	public AudioClip Click; 
 
@@ -34,6 +41,10 @@ public class PanelControlGame : MonoBehaviour {
 	Animator delAnim;
 	Animator helpAnim;
     Animator natureAnim;
+	Animator pagesAnim;
+	Animator chap1Anim;
+	Animator chap2Anim;
+	Animator chap3Anim;
 
     CanvasGroup optCanGroup;
     CanvasGroup toMainCanGroup;
@@ -45,6 +56,10 @@ public class PanelControlGame : MonoBehaviour {
 	CanvasGroup delCanGroup;
 	CanvasGroup helpCanGroup;
     CanvasGroup natureCanGroup;
+	CanvasGroup pagesCanGroup;
+	CanvasGroup chap1CanGroup;
+	CanvasGroup chap2CanGroup;
+	CanvasGroup chap3CanGroup;
 
     private Scene sceneName;
     private string activeScene;
@@ -123,6 +138,10 @@ public class PanelControlGame : MonoBehaviour {
 		loadCanGroup = loadPanel.GetComponent<CanvasGroup> ();
 		delCanGroup = delPanel.GetComponent<CanvasGroup> ();
 		helpCanGroup = HelpPanel.GetComponent<CanvasGroup> ();
+		pagesCanGroup = pagesPanel.GetComponent<CanvasGroup> ();
+		chap1CanGroup = chapter1Panel.GetComponent<CanvasGroup> ();;
+		chap2CanGroup = chapter2Panel.GetComponent<CanvasGroup> ();;
+		chap3CanGroup = chapter3Panel.GetComponent<CanvasGroup> ();;
     }
 
     public void AnimGetComp()
@@ -136,6 +155,10 @@ public class PanelControlGame : MonoBehaviour {
 		loadAnim = loadPanel.GetComponent<Animator> ();
 		delAnim = delPanel.GetComponent<Animator> ();
 		helpAnim = HelpPanel.GetComponent<Animator> ();
+		pagesAnim = pagesPanel.GetComponent<Animator> ();
+		chap1Anim = chapter1Panel.GetComponent<Animator> ();
+		chap2Anim = chapter2Panel.GetComponent<Animator> ();
+		chap3Anim = chapter3Panel.GetComponent<Animator> ();
 	}
 
 
@@ -176,6 +199,7 @@ public class PanelControlGame : MonoBehaviour {
 			helpAnim.Play ("Panel Out");
 		}
 
+
         if (naturePanel && natureCanGroup.alpha == 1) {
 
             natureAnim.Play("Panel Out");
@@ -202,37 +226,88 @@ public class PanelControlGame : MonoBehaviour {
 			toMainAnim.Play ("Panel Out");
 		}
 
-        if (toMainCanGroup.alpha == 0)
-        {   
-            
-		
-			if (helpCanGroup.alpha == 0) {
-				if (optCanGroup.alpha == 0) {
-					if (invCanGroup.alpha == 0) {
-                        if (!naturePanel || natureCanGroup.alpha == 0) {
-                            if (saveCanGroup.alpha == 0) {
-                                if (loadCanGroup.alpha == 0) {
-                                    if (delCanGroup.alpha == 0) {
-                                            optAnim.Play("Panel In");
-                                            GameObject.FindGameObjectWithTag("Controller").GetComponent<UserInterfaceButtons>().PauseGame();
+		if (toMainCanGroup.alpha == 0) {   
+			
+			if (chap3CanGroup.alpha == 0) {
+			
+				if (chap2CanGroup.alpha == 0) {
+			
+					if (chap1CanGroup.alpha == 0) {
+			
+						if (pagesCanGroup.alpha == 0) {
+			
+							if (helpCanGroup.alpha == 0) {
+				
+								if (optCanGroup.alpha == 0) {
+					
+									if (invCanGroup.alpha == 0) {
+						
+										if (!naturePanel || natureCanGroup.alpha == 0) {
+							
+											if (saveCanGroup.alpha == 0) {
+								
+												if (loadCanGroup.alpha == 0) {
+									
+													if (delCanGroup.alpha == 0) {
+														optAnim.Play ("Panel In");
+														GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().PauseGame ();
                                         
-                                    }
-                                }
-                            }
-                        }
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
 
-			if (optCanGroup.alpha == 1) {
-				optAnim.Play ("Panel Out");
+
+			if(chap3CanGroup.alpha == 0){
+				if (chap2CanGroup.alpha == 0) {
+					if (chap1CanGroup.alpha == 0) {
+						if (pagesCanGroup.alpha == 1) {
+
+							pagesAnim.Play ("Panel Out");
+						}
+					}
+				}
 			}
 
-        }
 
- /*
-        if (HelpPanel.activeSelf)
-            HelpPanel.SetActive(false); */
+			if(chap3CanGroup.alpha == 0){
+				if (chap2CanGroup.alpha == 0) {
+					if (chap1CanGroup.alpha == 0) {
+						if (pagesCanGroup.alpha == 0) {
+							if (optCanGroup.alpha == 1) {
+								optAnim.Play ("Panel Out");
+							}
+						}
+					}
+				}
+			}
+		}
+
+ 
+		if (chap1CanGroup.alpha == 1) {
+
+			chap1Anim.Play ("Panel Out");
+
+		}
+
+		if (chap2CanGroup.alpha == 1) {
+
+			chap2Anim.Play ("Panel Out");
+
+		}
+
+		if (chap3CanGroup.alpha == 1) {
+
+			chap3Anim.Play ("Panel Out");
+
+		}
 
 		if (gOverScreen.activeSelf) {
 
