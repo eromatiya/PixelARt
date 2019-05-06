@@ -375,5 +375,12 @@ public class PanelControlGame : MonoBehaviour {
 		pagesAnim.Play ("Panel Out");
 		optAnim.Play ("Panel Out");
 	}
+
+	public void CloseAllWhenLoading(){
+	
+		toMainAnim.Play ("Panel Out");
+		pagesAnim.Play ("Panel Out");
+		optAnim.Play ("Panel Out");
+	}
 		
 }

@@ -100,7 +100,7 @@ public class GraphicsScript : MonoBehaviour {
 			//QualitySettings.SetQualityLevel(1);
 			QualitySettings.shadows = ShadowQuality.Disable;
             QualitySettings.shadowDistance = 80.0f;
-			QualitySettings.pixelLightCount = 1;
+			QualitySettings.pixelLightCount = 8;
             camEffects (false, true, false);
 
 			graphicsSett = "Medium";
@@ -125,7 +125,7 @@ public class GraphicsScript : MonoBehaviour {
 			QualitySettings.shadows = ShadowQuality.HardOnly;
 			QualitySettings.shadowResolution = ShadowResolution.Low;
 			QualitySettings.shadowDistance = 100.0f;
-           	QualitySettings.pixelLightCount = 4;
+           	QualitySettings.pixelLightCount = 8;
 
             camEffects (true, true, false);
 

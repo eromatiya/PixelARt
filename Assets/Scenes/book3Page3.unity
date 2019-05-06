@@ -5194,7 +5194,6 @@ GameObject:
   - component: {fileID: 148941894}
   - component: {fileID: 148941893}
   - component: {fileID: 148941892}
-  - component: {fileID: 148941891}
   - component: {fileID: 148941890}
   - component: {fileID: 148941889}
   m_Layer: 5
@@ -5262,24 +5261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &148941891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114023339675047582, guid: e9cac506b2c5ee34199083ece23a5e3d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 148941887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d8858abc8f350498097d89902105d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MusicToggleButton: {fileID: 1554502561}
-  MusicToggleButtonHighlight: {fileID: 1351832974}
-  MusicOnSprite: {fileID: 21300000, guid: 774f851f5c36da14ba8046b8aaf06c96, type: 3}
-  MusicOffSprite: {fileID: 21300000, guid: c38dec327a4d3d24ba2d7c985b7b249a, type: 3}
-  SoundStatus: {fileID: 1413667915}
-  SoundStatusHightlight: {fileID: 2095622889}
 --- !u!95 &148941892
 Animator:
   serializedVersion: 3
@@ -44624,7 +44605,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 838162908}
         m_MethodName: CheckControlMode
         m_Mode: 1
         m_Arguments:
@@ -56129,6 +56110,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 178060819}
         m_MethodName: DisableFlashOnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 118235500}
+        m_MethodName: CloseAllWhenLoading
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -44644,7 +44644,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 248066657}
         m_MethodName: CheckControlMode
         m_Mode: 1
         m_Arguments:
@@ -49475,7 +49475,6 @@ GameObject:
   - component: {fileID: 1377733201}
   - component: {fileID: 1377733200}
   - component: {fileID: 1377733199}
-  - component: {fileID: 1377733198}
   - component: {fileID: 1377733197}
   - component: {fileID: 1377733196}
   m_Layer: 5
@@ -49543,24 +49542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &1377733198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114023339675047582, guid: e9cac506b2c5ee34199083ece23a5e3d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1377733194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d8858abc8f350498097d89902105d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MusicToggleButton: {fileID: 737667288}
-  MusicToggleButtonHighlight: {fileID: 1189447830}
-  MusicOnSprite: {fileID: 21300000, guid: 774f851f5c36da14ba8046b8aaf06c96, type: 3}
-  MusicOffSprite: {fileID: 21300000, guid: c38dec327a4d3d24ba2d7c985b7b249a, type: 3}
-  SoundStatus: {fileID: 902418871}
-  SoundStatusHightlight: {fileID: 1257736582}
 --- !u!95 &1377733199
 Animator:
   serializedVersion: 3
@@ -56744,6 +56725,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 178060819}
         m_MethodName: DisableFlashOnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 118235500}
+        m_MethodName: CloseAllWhenLoading
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -58094,7 +58094,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 137172346}
         m_MethodName: CheckControlMode
         m_Mode: 1
         m_Arguments:
@@ -72748,6 +72748,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 118235500}
+        m_MethodName: CloseAllWhenLoading
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1578720379
@@ -73677,7 +73688,6 @@ GameObject:
   - component: {fileID: 1602684973}
   - component: {fileID: 1602684972}
   - component: {fileID: 1602684971}
-  - component: {fileID: 1602684970}
   - component: {fileID: 1602684969}
   - component: {fileID: 1602684968}
   m_Layer: 5
@@ -73745,24 +73755,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &1602684970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114023339675047582, guid: e9cac506b2c5ee34199083ece23a5e3d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602684966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d8858abc8f350498097d89902105d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MusicToggleButton: {fileID: 2010793447}
-  MusicToggleButtonHighlight: {fileID: 1146430522}
-  MusicOnSprite: {fileID: 21300000, guid: 774f851f5c36da14ba8046b8aaf06c96, type: 3}
-  MusicOffSprite: {fileID: 21300000, guid: c38dec327a4d3d24ba2d7c985b7b249a, type: 3}
-  SoundStatus: {fileID: 1438434605}
-  SoundStatusHightlight: {fileID: 829609655}
 --- !u!95 &1602684971
 Animator:
   serializedVersion: 3
