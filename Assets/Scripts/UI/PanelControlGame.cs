@@ -364,12 +364,12 @@ public class PanelControlGame : MonoBehaviour {
 
 		if (chap2CanGroup.alpha == 1) {
 
-			chap1Anim.Play ("Panel Out");
+			chap2Anim.Play ("Panel Out");
 		}
 
 		if (chap3CanGroup.alpha == 1) {
 
-			chap1Anim.Play ("Panel Out");
+			chap3Anim.Play ("Panel Out");
 		}
 
 		pagesAnim.Play ("Panel Out");
