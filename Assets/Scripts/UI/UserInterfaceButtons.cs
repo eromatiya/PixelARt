@@ -981,6 +981,17 @@ public class UserInterfaceButtons : MonoBehaviour
                     SetAnimationIdle();
                 }
                 break;
+			case ("book1Page3"):
+				if (Playing)
+				{
+					SetAnimation("isWalking");
+				}
+				else
+				{
+					SetAnimationIdle();
+				}
+				break;
+			
             default:
                 break;
 

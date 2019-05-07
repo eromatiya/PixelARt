@@ -53099,7 +53099,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 126
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &1466963945
 MonoBehaviour:
@@ -53148,8 +53148,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2219734, y: 0.2583599, z: 0.36831608}
-  m_Center: {x: 0.021029506, y: 0.0991996, z: 0.003056795}
+  m_Size: {x: 0.2219734, y: 0.22071433, z: 0.36831608}
+  m_Center: {x: 0.021029506, y: 0.11802238, z: 0.003056795}
 --- !u!95 &1466963949
 Animator:
   serializedVersion: 3
@@ -53278,8 +53278,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0016306553, y: 0.0027297556, z: 0.003982891}
-  m_Center: {x: -0.00004741307, y: 0.00097387936, z: -0.0002846631}
+  m_Size: {x: 0.0016306549, y: 0.00234497, z: 0.003982891}
+  m_Center: {x: -0.000047413032, y: 0.0011662727, z: -0.00028466314}
 --- !u!114 &1466963953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56021,7 +56021,7 @@ TerrainCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1553492316}
   m_Material: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: f0e895fe1ffcf4e40ac50654653bc286, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1553492319

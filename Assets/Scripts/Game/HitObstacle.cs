@@ -34,6 +34,7 @@ public class HitObstacle : MonoBehaviour {
             Debug.Log("Game Over!");
             GameObject.FindGameObjectWithTag("Controller").GetComponent<UserInterfaceButtons>().SetAnimationIdle();
             GameObject.FindGameObjectWithTag("SFXController").GetComponent<ModelSoundManager>().StopLoopSound();
+			if(obstacle.name.Contains("Spider")) { Destroy(obstacle.gameObject); }
         }
     }
 

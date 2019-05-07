@@ -26,7 +26,7 @@ public class ActiveOutline : MonoBehaviour
                 if (Physics.Raycast(ray, out hit))
                 {
 
-                    if ( oldActive && touch.phase == TouchPhase.Began)
+					if ((hit.collider.tag == "Sands" || hit.collider.tag == "Model") && oldActive && touch.phase == TouchPhase.Began)
                     {
 
                         if (oldActive.transform.childCount < 1)

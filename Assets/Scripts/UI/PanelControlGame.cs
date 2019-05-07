@@ -247,11 +247,14 @@ public class PanelControlGame : MonoBehaviour {
 											if (saveCanGroup.alpha == 0) {
 								
 												if (loadCanGroup.alpha == 0) {
+
+													if (!gOverScreen.activeSelf) {
 									
-													if (delCanGroup.alpha == 0) {
-														optAnim.Play ("Panel In");
-														GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().PauseGame ();
+														if (delCanGroup.alpha == 0) {
+															optAnim.Play ("Panel In");
+															GameObject.FindGameObjectWithTag ("Controller").GetComponent<UserInterfaceButtons> ().PauseGame ();
                                         
+														}
 													}
 												}
 											}
