@@ -45,6 +45,9 @@ public class UserInterfaceButtons : MonoBehaviour
     public GameObject sfxManager;
 	public GameObject gameArena;
 	public GameObject analogController;
+	public GameObject arTrackable;
+	public GameObject stayOnLostBtn;
+	public GameObject hideOnLostBtn;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -364,6 +367,7 @@ public class UserInterfaceButtons : MonoBehaviour
 
         //Enable MODEL SFX
         
+		stayOnLostBtn.SetActive (true);
 
         if (Playing == false)
             Playing = true;
@@ -409,6 +413,10 @@ public class UserInterfaceButtons : MonoBehaviour
 				gameArena.SetActive (false);
 			}
 		}
+
+		HideAllOnLostBtns ();
+
+
         //Control model animations
         PlayPauseAnim();
 
@@ -1075,4 +1083,32 @@ public class UserInterfaceButtons : MonoBehaviour
 
 
     #endregion
+
+
+	#region STAY_ON_LOST
+
+	public void StayOnLost(){
+
+		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = Mathf.Infinity;
+		hideOnLostBtn.SetActive (true);
+		stayOnLostBtn.SetActive (false);
+		
+	}
+
+	public void HideOnLost(){
+		
+		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
+		hideOnLostBtn.SetActive (false);
+		stayOnLostBtn.SetActive (true);
+	}
+
+	public void HideAllOnLostBtns(){
+
+		stayOnLostBtn.SetActive (false);
+		hideOnLostBtn.SetActive (false);
+		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
+
+	}
+
+	#endregion // STAY ON LOST
 }
