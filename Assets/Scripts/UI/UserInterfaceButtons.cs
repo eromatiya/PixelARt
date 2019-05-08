@@ -712,6 +712,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		spawner.transform.localPosition = new Vector3 (0.0f, 0.0f, 0.0f);
 
         freezeTexture();
+		Model.transform.localScale = origLocScale;
         //ResizeModel(0.3f, 0.3f, 0.3f);
         decARScale();
 
