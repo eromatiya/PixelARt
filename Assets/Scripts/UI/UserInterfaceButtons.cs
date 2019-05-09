@@ -515,6 +515,9 @@ public class UserInterfaceButtons : MonoBehaviour
         else if (activeScene == "book1Page2")
         {
             SetAnimation("isAttacking");
+			Model.transform.localPosition = new Vector3 (0.0f, 0.077f, -0.065f);
+
+
         }
 
         else if (activeScene == "book1Page3")
