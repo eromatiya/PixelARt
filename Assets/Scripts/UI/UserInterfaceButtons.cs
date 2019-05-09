@@ -48,6 +48,8 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject arTrackable;
 	public GameObject stayOnLostBtn;
 	public GameObject hideOnLostBtn;
+	public GameObject arScalerSliderGame;
+	public GameObject arScalerSliderSBox;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -365,6 +367,7 @@ public class UserInterfaceButtons : MonoBehaviour
 			HideSandbox ();
 		}
 
+		arScalerSliderGame.SetActive (true);
         //Enable MODEL SFX
         
 		stayOnLostBtn.SetActive (true);
@@ -413,6 +416,8 @@ public class UserInterfaceButtons : MonoBehaviour
 				gameArena.SetActive (false);
 			}
 		}
+
+		arScalerSliderGame.SetActive (false);
 
 		HideAllOnLostBtns ();
 
@@ -730,8 +735,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		isSandbox = true;
         //regionCapture.SetActive (false);
 		sandboxManager.GetComponent<SaveLoadSystem> ().LoadState ();
-
-
+		arScalerSliderSBox.SetActive (true);
 		if (togglingSandbox) {
 		
 			togglingSandbox = false;
@@ -757,6 +761,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		sandBoxOffButton.SetActive (false);
 		sandBoxOnButton.SetActive (true);
 		sandboxManager.GetComponent<SaveLoadSystem> ().DestroyChildren ();
+		arScalerSliderSBox.SetActive (false);
         //regionCapture.SetActive (true);
         unfreezeTexture();
 

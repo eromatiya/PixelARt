@@ -58,6 +58,7 @@ public class ARScaleFactor : MonoBehaviour {
     public void returnOrigARScale() {
 
         arMarker.GetComponent<ARMarker>().NFTScale = origScaleVal;
+		gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (origScaleVal);
 
     }
 }
