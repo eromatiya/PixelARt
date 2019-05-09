@@ -22,6 +22,9 @@ public class ModelControlMode : MonoBehaviour {
 	private bool isRunningGame;
 	private GameObject StopBtnClone;
 
+	public GameObject arScalerSlider;
+	private RectTransform newARScalerRect;
+
 	Scene activeScene;
 	string sceneName;
 
@@ -51,6 +54,8 @@ public class ModelControlMode : MonoBehaviour {
 		
 			isRunningGame = false;
 		}
+
+		GetOrigRectTransfSlider ();
 
 		controlName = PlayerPrefs.GetString ("controlMode");
 		controlIcon ();
@@ -146,6 +151,7 @@ public class ModelControlMode : MonoBehaviour {
 			ToggleTerrainData (false);
 		}
 
+		SetOrigRectTransfSlider ();
 
 	}
 
@@ -177,6 +183,7 @@ public class ModelControlMode : MonoBehaviour {
 			ToggleTerrainData (true);
 		}
 
+		ChangeRectTransfSlider ();
 
 	}
 
@@ -201,5 +208,33 @@ public class ModelControlMode : MonoBehaviour {
 		if (gameTerrain) {
 			gameTerrain.GetComponent<TerrainCollider> ().enabled = toggle;
 		}
+	}
+
+	private void GetOrigRectTransfSlider(){
+
+		newARScalerRect = arScalerSlider.GetComponent<RectTransform> ();
+	}
+
+	private void SetOrigRectTransfSlider(){
+	
+		arScalerSlider.GetComponent<RectTransform> ().anchoredPosition = new Vector2 (25f, 13.1f);
+		arScalerSlider.GetComponent<RectTransform> ().anchorMin = new Vector2 (0, 0.5f);
+		arScalerSlider.GetComponent<RectTransform> ().anchorMax = new Vector2 (0, 0.5f);;
+		arScalerSlider.GetComponent<RectTransform> ().pivot = new Vector2 (0.5f, 0.5f);
+		arScalerSlider.GetComponent<RectTransform> ().localEulerAngles = new Vector3 (0, 0, 90f);
+		arScalerSlider.GetComponent<RectTransform> ().localScale = new Vector3 (1, 1, 1);
+		arScalerSlider.GetComponent<RectTransform> ().sizeDelta = new Vector2 (209f, 26.2f);
+	}
+
+	private void ChangeRectTransfSlider(){
+	
+		newARScalerRect.anchoredPosition = new Vector2 (32f, -44f);
+		newARScalerRect.anchorMin = new Vector2 (0, 0.5f);
+		newARScalerRect.anchorMax = new Vector2 (0, 0.5f);
+		newARScalerRect.pivot = new Vector2 (0.5f, 0.5f);
+		newARScalerRect.localEulerAngles = new Vector3 (0.0f, 0.0f, 90.0f);
+		newARScalerRect.localScale = new Vector3 (1, 1, 1);
+		newARScalerRect.sizeDelta = new Vector2 (295.6f,37.1f);
+
 	}
 }

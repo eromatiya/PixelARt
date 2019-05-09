@@ -97,6 +97,6 @@ public class ScoreScript : MonoBehaviour {
         Score = 0;
         StarCount = 0;
         DiffLvl = 1;
-		ScrToNxtLvl = 10;
+		ScrToNxtLvl = 100;
     }
 }
