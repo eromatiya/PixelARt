@@ -46,6 +46,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject gameArena;
 	public GameObject analogController;
 	public GameObject arTrackable;
+	public GameObject arController;
 	public GameObject stayOnLostBtn;
 	public GameObject hideOnLostBtn;
 	public GameObject arScalerSliderGame;
@@ -90,6 +91,8 @@ public class UserInterfaceButtons : MonoBehaviour
     private string activeScene;
     string currentAnimation="";
 
+	private float origARFarPlane;
+
     void Start()
     {
 
@@ -99,6 +102,8 @@ public class UserInterfaceButtons : MonoBehaviour
 
         sceneName = SceneManager.GetActiveScene();
         activeScene = sceneName.name;
+
+		origARFarPlane = arController.GetComponent<ARController> ().FarPlane;
     }
 
     void Update ()
@@ -735,6 +740,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		isSandbox = true;
         //regionCapture.SetActive (false);
 		sandboxManager.GetComponent<SaveLoadSystem> ().LoadState ();
+		arController.GetComponent<ARController> ().FarPlane = 15.0f;
 		arScalerSliderSBox.SetActive (true);
 		if (togglingSandbox) {
 		
@@ -761,6 +767,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		sandBoxOffButton.SetActive (false);
 		sandBoxOnButton.SetActive (true);
 		sandboxManager.GetComponent<SaveLoadSystem> ().DestroyChildren ();
+		arController.GetComponent<ARController> ().FarPlane = origARFarPlane;
 		arScalerSliderSBox.SetActive (false);
         //regionCapture.SetActive (true);
         unfreezeTexture();
