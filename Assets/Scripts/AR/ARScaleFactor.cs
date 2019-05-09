@@ -29,28 +29,32 @@ public class ARScaleFactor : MonoBehaviour {
 
         if (activeScene == "book1Page1")
         {
-                arMarker.GetComponent<ARMarker>().NFTScale = 40;
+            arMarker.GetComponent<ARMarker>().NFTScale = 40;
+			gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (40);
 
         }
         else if (activeScene == "book1Page2")
         {
             arMarker.GetComponent<ARMarker>().NFTScale = 7;
+			gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (7);
 
         }
         else if (activeScene == "book1Page3" || activeScene == "book3Page2") {
 
             arMarker.GetComponent<ARMarker>().NFTScale = 5;
-
+			gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (5);
         }
         else if (activeScene == "book2Page1" || activeScene == "book2Page2" || activeScene == "book2Page3")
         {
 
             arMarker.GetComponent<ARMarker>().NFTScale = 20;
+			gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (20);
         }
         else if (activeScene == "book3Page1" || activeScene == "book3Page3")
         {
 
             arMarker.GetComponent<ARMarker>().NFTScale = 35;
+			gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (35);
         }
 
     }

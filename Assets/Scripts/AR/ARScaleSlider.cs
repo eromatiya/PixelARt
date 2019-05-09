@@ -54,7 +54,7 @@ public class ARScaleSlider : MonoBehaviour {
 		arScaleSliderGame.maxValue = maxValue;
 		arScaleSliderSBox.maxValue = maxValue;
 		origARScale = arMarker.GetComponent<ARMarker> ().NFTScale;
-		SetOrigScaleSlider (arMarker.GetComponent<ARMarker> ().NFTScale);
+		SetOrigScaleSlider (origARScale);
 	}
 	
 	// Update is called once per frame
@@ -62,6 +62,8 @@ public class ARScaleSlider : MonoBehaviour {
 		
 	}
 
+
+	//Attached to sliders
 	public void SetARScale(float arScale){
 	
 		arMarker.GetComponent<ARMarker> ().NFTScale = maxValue - arScale;
@@ -69,6 +71,7 @@ public class ARScaleSlider : MonoBehaviour {
 
 	}
 
+	//Only runs on start and game/sandbox off
 	public void SetOrigScaleSlider(float origScale){
 
 		arScaleSliderGame.value = maxValue - origScale;
