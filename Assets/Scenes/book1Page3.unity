@@ -42812,7 +42812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1207555499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67854,6 +67854,7 @@ MonoBehaviour:
   arMarker: {fileID: 2114179045}
   arScaleSliderGame: {fileID: 1665744663}
   arScaleSliderSBox: {fileID: 1020661283}
+  origARScale: 0
 --- !u!1 &1917162501
 GameObject:
   m_ObjectHideFlags: 0
@@ -72988,7 +72989,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1072373985}
   m_Direction: 2
   m_Value: 0.99999994
-  m_Size: 0.124387376
+  m_Size: 0.12438737
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:

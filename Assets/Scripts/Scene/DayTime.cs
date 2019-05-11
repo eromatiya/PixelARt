@@ -47,7 +47,7 @@ public class DayTime : MonoBehaviour {
 	//check time then execute
 	private void checkTime(){
 	
-		if (sysHour > 19 || (sysHour < 6 && sysHour > 0)) {
+		if (sysHour >= 19 || (sysHour < 6 && sysHour > 0)) {
 			//night
 			mainCamera.backgroundColor = nightSky;
 			light.intensity = 0.075f;

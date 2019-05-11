@@ -354,12 +354,14 @@ public class UserInterfaceButtons : MonoBehaviour
 
     public void GameStart()
     {
+
+		freezeTexture();
+
         //Reduce size of model in game
         gameOnModPos();
         MovePanel.SetActive(true);
 		isInGame = true;
 		sandBoxOnButton.GetComponent<Button> ().interactable = false;
-        freezeTexture();
         decARScale();
 
         if (activeScene != "book1Page3" && activeScene != "book3Page2")
