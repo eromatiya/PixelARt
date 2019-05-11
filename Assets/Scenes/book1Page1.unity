@@ -65797,6 +65797,7 @@ MonoBehaviour:
   arMarker: {fileID: 2114179045}
   arScaleSliderGame: {fileID: 244529241}
   arScaleSliderSBox: {fileID: 1164962883}
+  origARScale: 0
 --- !u!1 &1920564589
 GameObject:
   m_ObjectHideFlags: 0
@@ -69801,7 +69802,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1999526491}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.12438737
+  m_Size: 0.12438736
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:

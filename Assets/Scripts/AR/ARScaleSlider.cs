@@ -10,7 +10,7 @@ public class ARScaleSlider : MonoBehaviour {
 	public GameObject arMarker;
 	public Slider arScaleSliderGame;
 	public Slider arScaleSliderSBox;
-	private float origARScale;
+	public float origARScale;
 	private float maxValue;
 
 	private Scene activeScene;

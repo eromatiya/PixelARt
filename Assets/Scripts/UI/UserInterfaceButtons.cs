@@ -373,6 +373,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		}
 
 		arScalerSliderGame.SetActive (true);
+		arScalerSliderSBox.SetActive (false);
         //Enable MODEL SFX
         
 		stayOnLostBtn.SetActive (true);
@@ -805,11 +806,15 @@ public class UserInterfaceButtons : MonoBehaviour
 			//Hide sandbox
 			HideSandbox();
 
+			arScalerSliderSBox.SetActive (false);
+
 		} else {
 			
 			//show sandbox
 			if (isOnTarget && isAROn) {
 				ShowSandbox ();
+
+				arScalerSliderSBox.SetActive (true);
 			}
 		}
 
@@ -817,6 +822,8 @@ public class UserInterfaceButtons : MonoBehaviour
 
 	private void HideSandbox(){
 	
+		gameObject.GetComponent<ARScaleSlider> ().SetOrigScaleSlider (gameObject.GetComponent<ARScaleSlider> ().origARScale);
+		unfreezeTexture ();
 		spawner.SetActive (false);
 		toggleSandboxBtn.GetComponent<UnityEngine.UI.Image> ().sprite = showSandboxSprite;
 		togglingSandbox = false;
@@ -830,15 +837,13 @@ public class UserInterfaceButtons : MonoBehaviour
 
 	private void ShowSandbox(){
 	
+
+		freezeTexture ();
+		gameObject.GetComponent<ARScaleFactor> ().decreaseARScale ();
 		spawner.SetActive (true);
 		toggleSandboxBtn.GetComponent<UnityEngine.UI.Image> ().sprite = hideSandboxSprite;
 		togglingSandbox = true;
 		sandboxManager.GetComponent<SaveLoadSystem> ().LoadState ();
-
-		if (!isExtendedTracking) {
-            //EnableExtTracking (); to be removed
-            isExtendedTracking = true;
-		}
 		spawner.transform.localPosition = new Vector3 (0.0f, -0.1001f, 0.0f);
 
 	}
