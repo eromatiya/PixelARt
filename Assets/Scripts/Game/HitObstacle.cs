@@ -10,6 +10,9 @@ public class HitObstacle : MonoBehaviour {
 	private AudioSource GameOverSource { get { return GetComponent<AudioSource>(); } }
 	public AudioClip GameOverSFX; 
 
+	private AudioSource hitByObstacleSource { get { return GetComponent<AudioSource>(); } }
+	public AudioClip hitByObstacleSFX;
+
 	public GameObject expManager;
 
 	GameObject uiController;
@@ -33,6 +36,9 @@ public class HitObstacle : MonoBehaviour {
 		GameOverSource.clip = GameOverSFX;
 		GameOverSource.playOnAwake = false; 
 		GameOverSource.volume = 1.0f;
+
+		hitByObstacleSource.clip = hitByObstacleSFX;
+		hitByObstacleSource.playOnAwake = false;
 	}
 	
 	// Update is called once per frame
@@ -46,6 +52,7 @@ public class HitObstacle : MonoBehaviour {
 		{
 			if (obstacle.name.Contains ("Snake")) {
 
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				HealthManager.health -= 15.0f;
 				if (HealthManager.health <= 0) {
 
@@ -54,7 +61,8 @@ public class HitObstacle : MonoBehaviour {
 				Destroy (obstacle.gameObject); 
 
 			} else if (obstacle.name.Contains ("spider")) {
-				
+
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				HealthManager.health -= 15.0f;
 				if (HealthManager.health <= 0) {
 				
@@ -64,7 +72,7 @@ public class HitObstacle : MonoBehaviour {
 
 			} else if (obstacle.name.Contains ("UnderSeaMine")) {
 
-
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				HealthManager.health -= 20.0f;
 				if (expManager) {
 					expManager.GetComponent<ExplosionManager> ().ExplodeSmall (transform.position);
@@ -77,7 +85,7 @@ public class HitObstacle : MonoBehaviour {
 
 			} else if (obstacle.name.Contains ("SeaMine")) {
 
-
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				CheckHealth (25.0f);
 				if (expManager) {
 					expManager.GetComponent<ExplosionManager> ().ExplodeSmall (transform.position);
@@ -86,17 +94,14 @@ public class HitObstacle : MonoBehaviour {
 
 			} else if (obstacle.name.Contains ("Seagul")) {
 
-
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				CheckHealth (5.0f);
-				if (expManager) {
-					expManager.GetComponent<ExplosionManager> ().ExplodeSmall (transform.position);
-				}
 				Destroy (obstacle.gameObject); 
 
 			} else if (obstacle.name.Contains ("road")) {
 
 				CheckHealth (5.0f);
-
+				hitByObstacleSource.PlayOneShot (hitByObstacleSFX);
 				if (expManager) {
 					expManager.GetComponent<ExplosionManager> ().ExplodeSmall (transform.position);
 				}

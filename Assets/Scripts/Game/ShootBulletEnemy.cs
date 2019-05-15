@@ -24,9 +24,9 @@ public class ShootBulletEnemy : MonoBehaviour {
 		gameObject.AddComponent<AudioSource>();
 		shootSource.clip = shootClip;
 		shootSource.playOnAwake = false;
-		shootSource.priority = 256; 
-		shootSource.volume = 1f;
-
+		shootSource.priority = 128; 
+		shootSource.volume = 0.50f;
+	
 		StartCoroutine ("ShootTheModel");
 	}
 	
@@ -40,7 +40,7 @@ public class ShootBulletEnemy : MonoBehaviour {
 		while (true) {
 		
 
-			yield return new WaitForSeconds (Random.Range (0.1f, 1.0f));
+			yield return new WaitForSeconds (Random.Range (0.5f, 1.0f));
 
 			if (Play) {
 				shootSource.PlayOneShot (shootClip);
@@ -60,13 +60,20 @@ public class ShootBulletEnemy : MonoBehaviour {
 					break;
 
 				case "book2Page2":
-					bulletIns.transform.localPosition = new Vector3 (enemyPos.x, 9.6f, 30f);
+					bulletIns.transform.localPosition = new Vector3 (enemyPos.x, -1.2f, 30f);
 					break;
 				case "book2Page3":
-					bulletIns.transform.localPosition = new Vector3 (enemyPos.x, -5f, 62f);
+					
+					//bulletIns.transform.localPosition = new Vector3 (enemyPos.x, -5f, 62f);
 
 					if (gameObject.name == "EnemyParent4") {
+						
 						bulletIns.transform.localPosition = new Vector3 (enemyPos.x, -12.1f, 62f);
+
+					} else if (gameObject.name == "SharkParent") {
+						
+						bulletIns.transform.localPosition = new Vector3 (0, -0.047f, 0.5f);
+					
 					} else {
 					
 						bulletIns.transform.localPosition = new Vector3 (enemyPos.x, -12.8f, 30f);

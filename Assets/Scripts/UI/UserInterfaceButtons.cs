@@ -529,6 +529,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		
 
 			HealthManager.enHealth = 100.0f;
+			enemyBar.SetActive (false);
 		}
 
 		

@@ -41454,7 +41454,7 @@ Transform:
   - {fileID: 1684822029}
   - {fileID: 96814755}
   m_Father: {fileID: 1293429710}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 38.030003, y: 0, z: 0}
 --- !u!1 &1116075145
 GameObject:
@@ -47643,6 +47643,7 @@ Transform:
   - {fileID: 1207555504}
   - {fileID: 1914793028}
   - {fileID: 440175149}
+  - {fileID: 1308338226}
   - {fileID: 1111927062}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48137,6 +48138,54 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305936228}
+--- !u!1 &1308338225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1920820219066374, guid: f5345f5b3f46fd24c8ccc72b518674af,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1308338226}
+  - component: {fileID: 1308338227}
+  m_Layer: 0
+  m_Name: ExplosionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308338226
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4654622523143174, guid: f5345f5b3f46fd24c8ccc72b518674af,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308338225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1293429710}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308338227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114505265501606640, guid: f5345f5b3f46fd24c8ccc72b518674af,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308338225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6debc42fa38520446a0a88f4ae58322d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionLarge: {fileID: 1000012903210382, guid: a6a622dcb6224014f923dc6743bf35d3,
+    type: 2}
+  explosionSmall: {fileID: 1000012903210382, guid: 17b961452d2ff4d4eb7e583273b58800,
+    type: 2}
+  kaBoomSFX: {fileID: 8300000, guid: a8a10bceda13f874e9c5c501c41873d6, type: 3}
 --- !u!1 &1310131109
 GameObject:
   m_ObjectHideFlags: 0
@@ -51499,7 +51548,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TilePrefabs:
-  - {fileID: 1401330093950680, guid: ac2e0cab62a896b45a83871328f758cc, type: 2}
+  - {fileID: 1571791901138706, guid: 38f986c042018134abd2cbaa9e5538d7, type: 2}
+  - {fileID: 1893813628552112, guid: bfdf931dc849c02438cafaf485ee6610, type: 2}
+  - {fileID: 1907463734908762, guid: 8732ae35c7c95c446aee1e43e4b2c114, type: 2}
+  - {fileID: 1581975608669426, guid: a11ec6109654c07419eb9e54512ad0cf, type: 2}
+  - {fileID: 1490028318243572, guid: 575b608d548395c4881d720cd2506f87, type: 2}
+  - {fileID: 1784184151561716, guid: ac2e0cab62a896b45a83871328f758cc, type: 2}
+  - {fileID: 1151091043719186, guid: c5d81bb03b5be16488647c6a6aea810f, type: 2}
+  - {fileID: 1734542938895134, guid: cc7a478a26d4bad42b045218b37e3d75, type: 2}
+  - {fileID: 1994063917823924, guid: 8889e156edf8d3c4a95f4320e690496c, type: 2}
+  - {fileID: 1939298774929804, guid: bd4805552ad2c6a40a20cdec3bde3086, type: 2}
 --- !u!54 &1400404423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76959,7 +77017,6 @@ GameObject:
   - component: {fileID: 2138007684}
   - component: {fileID: 2138007683}
   - component: {fileID: 2138007682}
-  - component: {fileID: 2138007687}
   m_Layer: 9
   m_Name: ShipParent
   m_TagString: Model
@@ -77024,7 +77081,8 @@ MonoBehaviour:
   isOver: 0
   GameOverScr: {fileID: 1533490250}
   GameOverSFX: {fileID: 8300000, guid: a067c8cd129480c4389953a025c66960, type: 3}
-  expManager: {fileID: 0}
+  hitByObstacleSFX: {fileID: 8300000, guid: edd8dffa926d07b46ba18708d6ece35b, type: 3}
+  expManager: {fileID: 1308338225}
 --- !u!65 &2138007685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77054,20 +77112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2138007687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138007680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6debc42fa38520446a0a88f4ae58322d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionLarge: {fileID: 0}
-  explosionSmall: {fileID: 0}
-  kaBoomSFX: {fileID: 8300000, guid: a8a10bceda13f874e9c5c501c41873d6, type: 3}
 --- !u!1 &2140041250
 GameObject:
   m_ObjectHideFlags: 0

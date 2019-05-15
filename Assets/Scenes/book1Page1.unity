@@ -28540,6 +28540,7 @@ MonoBehaviour:
   isOver: 0
   GameOverScr: {fileID: 1533490250}
   GameOverSFX: {fileID: 8300000, guid: a067c8cd129480c4389953a025c66960, type: 3}
+  hitByObstacleSFX: {fileID: 8300000, guid: d7e868a43f56f7d4c9a59374d8cfc8a6, type: 3}
   expManager: {fileID: 0}
 --- !u!114 &871180667
 MonoBehaviour:
@@ -47169,7 +47170,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TilePrefabs:
-  - {fileID: 1952632824617470, guid: 2a0bf937ccaeb3f4f8b9c978080ca9eb, type: 2}
+  - {fileID: 1911991004840334, guid: 3eb01a187f267084fae91daecb7e5055, type: 2}
+  - {fileID: 1769554924500134, guid: c8f33eb174359c64e93eed0247d573f9, type: 2}
+  - {fileID: 1470389056643012, guid: b02402109d20ecc43b904e2b78ac0827, type: 2}
+  - {fileID: 1011587941996492, guid: b52f492b35e6c0947b3b319b1f9063bb, type: 2}
+  - {fileID: 1360221726065856, guid: 11261f2e609548e4494130853c0d669d, type: 2}
+  - {fileID: 1025150162678842, guid: 2a0bf937ccaeb3f4f8b9c978080ca9eb, type: 2}
+  - {fileID: 1158333531983214, guid: db806e6b031dac4428a849392279bc09, type: 2}
+  - {fileID: 1257926479971078, guid: ee21a32044a1fb04fafa541bb9a2f39b, type: 2}
+  - {fileID: 1744644675609136, guid: 021983600ebbc9a4585e138d5eccf227, type: 2}
+  - {fileID: 1735924105570824, guid: 90f631846a19c98498f1de3c094c3ea0, type: 2}
 --- !u!54 &1400404423
 Rigidbody:
   m_ObjectHideFlags: 0
