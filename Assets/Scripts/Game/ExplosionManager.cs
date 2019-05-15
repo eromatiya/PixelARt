@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionOnCollision : MonoBehaviour {
+public class ExplosionManager : MonoBehaviour {
 
-    public GameObject explosion;
+    public GameObject explosionLarge;
+	public GameObject explosionSmall;
     private AudioSource kaBoomSrc { get { return GetComponent<AudioSource>(); } }
     public AudioClip kaBoomSFX;
 
@@ -25,19 +26,21 @@ public class ExplosionOnCollision : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider obstacle)
-    {
-        if (obstacle.gameObject.tag == "Obstacle")
-        {
-            if(obstacle.name.Contains("SeaMine")) { Destroy(obstacle.gameObject); }
-            Explode();
-        }
-    }
 
-    void Explode() {
+    public void ExplodeSmall(Vector3 position) {
 
-        GameObject kaBoom = Instantiate(explosion, transform.position, Quaternion.identity);
+        GameObject kaBoom = Instantiate(explosionSmall, position, Quaternion.identity);
+		kaBoomSrc.volume = 0.45f;
         kaBoomSrc.PlayOneShot(kaBoomSFX);
 
     }
+
+
+	public void ExplodeLarge(Vector3 position) {
+
+		GameObject kaBoom = Instantiate(explosionLarge, position, Quaternion.identity);
+		kaBoomSrc.volume = 1.0f;
+		kaBoomSrc.PlayOneShot(kaBoomSFX);
+
+	}
 }

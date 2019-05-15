@@ -51,6 +51,10 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject hideOnLostBtn;
 	public GameObject arScalerSliderGame;
 	public GameObject arScalerSliderSBox;
+	public GameObject healthBar;
+	public GameObject enemyBar;
+	public GameObject fireButton;
+	public GameObject oldEnemy;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -357,6 +361,21 @@ public class UserInterfaceButtons : MonoBehaviour
 
 		freezeTexture();
 
+		if (healthBar) {
+
+
+			healthBar.SetActive (true);
+			HealthManager.health = 100.0f;
+			HealthManager.enHealth = 100.0f;
+		}
+
+
+		if (fireButton) {
+			
+			fireButton.SetActive (true);
+
+		}
+
         //Reduce size of model in game
         gameOnModPos();
         MovePanel.SetActive(true);
@@ -388,6 +407,29 @@ public class UserInterfaceButtons : MonoBehaviour
 
     public void GameStop()
     {
+
+
+		if (healthBar) {
+
+			healthBar.SetActive (false);
+
+
+			HealthManager.health = 100.0f;
+			HealthManager.enHealth = 100.0f;
+		}
+
+		if (enemyBar) {
+			
+			enemyBar.SetActive (false);
+		
+		}
+
+		if (fireButton) {
+		
+			fireButton.SetActive (false);
+		
+		}
+
         //Scale up size of model in game
         gameOffModPos();
 		isInGame = false;
@@ -476,6 +518,19 @@ public class UserInterfaceButtons : MonoBehaviour
     {
         Playing = true;
         gameOnModPos();
+
+
+		if (healthBar) {
+
+			HealthManager.health = 100.0f;
+		}
+
+		if (enemyBar) {
+		
+
+			HealthManager.enHealth = 100.0f;
+		}
+
 		
         Model.GetComponent<HitObstacle>().isOver = false;
         gameObject.GetComponent<ScoreScript>().ResetScores();
