@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class MarkerEventHandler : MonoBehaviour {
 
+	GameObject uiController;
+
 	// Use this for initialization
 	void Start () {
+
+		if (GameObject.FindGameObjectWithTag ("Controller")) {
 		
+			uiController = GameObject.FindGameObjectWithTag ("Controller");
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -24,7 +31,8 @@ public class MarkerEventHandler : MonoBehaviour {
         */
 
         Debug.Log("Marker found!");
-        GameObject.FindGameObjectWithTag("Controller").GetComponent<UserInterfaceButtons>().onTargetFound();
+
+        uiController.GetComponent<UserInterfaceButtons>().onTargetFound();
     }
 
     
@@ -47,7 +55,7 @@ public class MarkerEventHandler : MonoBehaviour {
         }
         */
         Debug.Log("Marker lost!");
-        GameObject.FindGameObjectWithTag("Controller").GetComponent<UserInterfaceButtons>().onTargetLost();
+        uiController.GetComponent<UserInterfaceButtons>().onTargetLost();
 
     }
 

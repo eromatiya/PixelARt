@@ -47,14 +47,15 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject analogController;
 	public GameObject arTrackable;
 	public GameObject arController;
-	public GameObject stayOnLostBtn;
-	public GameObject hideOnLostBtn;
+	//public GameObject stayOnLostBtn;
+	//public GameObject hideOnLostBtn;
 	public GameObject arScalerSliderGame;
 	public GameObject arScalerSliderSBox;
 	public GameObject healthBar;
 	public GameObject enemyBar;
 	public GameObject fireButton;
 	public GameObject oldEnemy;
+	public GameObject perspButton;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -397,7 +398,9 @@ public class UserInterfaceButtons : MonoBehaviour
 		arScalerSliderSBox.SetActive (false);
         //Enable MODEL SFX
         
-		stayOnLostBtn.SetActive (true);
+		//stayOnLostBtn.SetActive (true);
+
+		perspButton.SetActive (true);
 
         if (Playing == false)
             Playing = true;
@@ -407,7 +410,10 @@ public class UserInterfaceButtons : MonoBehaviour
 
     public void GameStop()
     {
+		perspButton.SetActive (false);
 
+		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
+		gameObject.GetComponent<PerspectiveMode> ().DefaultView ();
 
 		if (healthBar) {
 
@@ -469,7 +475,7 @@ public class UserInterfaceButtons : MonoBehaviour
 
 		arScalerSliderGame.SetActive (false);
 
-		HideAllOnLostBtns ();
+		//HideAllOnLostBtns ();
 
 
         //Control model animations
@@ -665,20 +671,21 @@ public class UserInterfaceButtons : MonoBehaviour
 		}
 
         if (sandboxManager.activeSelf) sandboxManager.SetActive(false);
-      
-        
+
 
 		gizmoCamera.GetComponent<Camera> ().enabled = false;
 		//if(PlayButton.activeSelf && Playing == true)
 
         sfxManager.GetComponent<ModelSoundManager>().StopAllSFX();
-
+		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = Mathf.Infinity;
         isOnTarget = false;
     }
 
     //execute when targetfound, referenced in DefaultTrackableEventHandler script in ImageTarget
     public void onTargetFound()
     {
+
+		DefaultPerpective ();
 
         if (Playing == false && StopGame.activeSelf)
         {
@@ -735,6 +742,8 @@ public class UserInterfaceButtons : MonoBehaviour
 				analogController.SetActive (true);
 			}
 		}
+
+		gizmoCamera.GetComponent<Camera> ().enabled = false;
 
         sfxManager.GetComponent<ModelSoundManager>().EnableRandomSound();
 
@@ -1164,6 +1173,19 @@ public class UserInterfaceButtons : MonoBehaviour
     #endregion
 
 
+	private void DefaultPerpective(){
+	
+		if (Playing) {
+		
+			gameObject.GetComponent<PerspectiveMode> ().DefaultView ();
+			gameObject.GetComponent<PerspectiveMode>().perspView="defaultView";
+			gameObject.GetComponent<PerspectiveMode> ().ChangePerspective ();
+
+		}
+
+	}
+
+	/*
 	#region STAY_ON_LOST
 
 	public void StayOnLost(){
@@ -1171,6 +1193,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = Mathf.Infinity;
 		hideOnLostBtn.SetActive (true);
 		stayOnLostBtn.SetActive (false);
+		perspButton.SetActive (true);
 		
 	}
 
@@ -1179,15 +1202,18 @@ public class UserInterfaceButtons : MonoBehaviour
 		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
 		hideOnLostBtn.SetActive (false);
 		stayOnLostBtn.SetActive (true);
+		perspButton.SetActive (false);
 	}
 
 	public void HideAllOnLostBtns(){
 
 		stayOnLostBtn.SetActive (false);
 		hideOnLostBtn.SetActive (false);
+		perspButton.SetActive (false);
 		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
-
 	}
 
 	#endregion // STAY ON LOST
+
+	*/
 }

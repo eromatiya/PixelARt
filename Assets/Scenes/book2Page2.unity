@@ -39076,6 +39076,7 @@ RectTransform:
   - {fileID: 1724059079}
   - {fileID: 1338094085}
   - {fileID: 1300729037}
+  - {fileID: 947304237}
   m_Father: {fileID: 178060817}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59580,6 +59581,132 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 946659850}
+--- !u!1 &947304236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1773126834145798, guid: 383ca1e34f23e4c42aa7e8df9c512a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 947304237}
+  - component: {fileID: 947304240}
+  - component: {fileID: 947304239}
+  - component: {fileID: 947304238}
+  m_Layer: 5
+  m_Name: ChangePersBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &947304237
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224034317277147048, guid: 383ca1e34f23e4c42aa7e8df9c512a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947304236}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999945, y: 0.9999945, z: 0.9999945}
+  m_Children: []
+  m_Father: {fileID: 585916645}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -49.3, y: -109.400024}
+  m_SizeDelta: {x: 55, y: 55}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &947304238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114350582566689634, guid: 383ca1e34f23e4c42aa7e8df9c512a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947304236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 947304239}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1915753107}
+        m_MethodName: ChangePerspective
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &947304239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114709903357779034, guid: 383ca1e34f23e4c42aa7e8df9c512a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947304236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d1782cb14ec4b8f4b9c1fc2f0fb00c37, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &947304240
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222586460695885910, guid: 383ca1e34f23e4c42aa7e8df9c512a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 947304236}
 --- !u!1 &949841316
 GameObject:
   m_ObjectHideFlags: 0
@@ -124324,6 +124451,7 @@ GameObject:
   - component: {fileID: 1915753104}
   - component: {fileID: 1915753105}
   - component: {fileID: 1915753106}
+  - component: {fileID: 1915753107}
   m_Layer: 5
   m_Name: UIControl
   m_TagString: Controller
@@ -124375,14 +124503,13 @@ MonoBehaviour:
   analogController: {fileID: 0}
   arTrackable: {fileID: 1201687997}
   arController: {fileID: 2114179045}
-  stayOnLostBtn: {fileID: 1125074855}
-  hideOnLostBtn: {fileID: 314071609}
   arScalerSliderGame: {fileID: 691195124}
   arScalerSliderSBox: {fileID: 1822110284}
   healthBar: {fileID: 1300729036}
   enemyBar: {fileID: 1724059078}
   fireButton: {fileID: 1338094084}
   oldEnemy: {fileID: 0}
+  perspButton: {fileID: 947304236}
   showSandboxSprite: {fileID: 21300000, guid: 8199ad47392023e45969798858f021e3, type: 3}
   hideSandboxSprite: {fileID: 21300000, guid: 45164371d1830de44acf13255a0b5877, type: 3}
   onFlashLightSprite: {fileID: 21300000, guid: ccbefb1dc4a36af49b078d3e98aa35ab, type: 3}
@@ -124466,6 +124593,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1320957122}
   enHealthBar: {fileID: 391315982}
+--- !u!114 &1915753107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915753100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c174f2a0c94022c449b2c8a278996dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perspButton: {fileID: 947304238}
+  arTrackedObj: {fileID: 1201687999}
+  thirdPersonSprite: {fileID: 21300000, guid: d1782cb14ec4b8f4b9c1fc2f0fb00c37, type: 3}
+  firstPersonSprite: {fileID: 21300000, guid: bbfa305e73a5d944cb0e695566007fbc, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 9ecf4ab6f6568ab4aacff6c274c8bddf, type: 3}
+  ship: {fileID: 387568954}
+  perspView: defaultView
 --- !u!1 &1920024819
 GameObject:
   m_ObjectHideFlags: 0
