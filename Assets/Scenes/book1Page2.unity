@@ -45496,16 +45496,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TilePrefabs:
-  - {fileID: 1822209538539012, guid: 5171ae459256ba849bbd0acec7bcc3e1, type: 2}
-  - {fileID: 1196539145816680, guid: d12cfe1e061fab64989eac945041c424, type: 2}
-  - {fileID: 1134485877861042, guid: 30d69f4b96e97d74292f74b4e14a7083, type: 2}
-  - {fileID: 1373239218970358, guid: dc9297b08f83cb542a86d74dcdeb3318, type: 2}
-  - {fileID: 1564079187267428, guid: 81a7debee87744c43ba6896e4d05d5fe, type: 2}
-  - {fileID: 1553312304659024, guid: 486a65b8a493c2e4396c1d3e1da58703, type: 2}
-  - {fileID: 1577149394802200, guid: 3ddb398e846c352448bbd148ca75f4a0, type: 2}
-  - {fileID: 1405566187388778, guid: e32d42eba72627544999cfa46117e500, type: 2}
-  - {fileID: 1921782583836598, guid: 311903a9a351d3549b89c68ab06b1c6c, type: 2}
-  - {fileID: 1080113373676882, guid: 43a6a69367806bb4f81f241a0ede124f, type: 2}
+  - {fileID: 1217912438567288, guid: e1ec2d80abb2f9047812772aa6441ab4, type: 2}
+  - {fileID: 1423215628176002, guid: a8a345430aa9468498cf1c1b88caa7c1, type: 2}
+  - {fileID: 1679712035879694, guid: f4c21458cff648d448c0a96f7f2c41e3, type: 2}
+  - {fileID: 1001579068599708, guid: b8992ed8ffbcb154cb14db65fc84cadd, type: 2}
+  - {fileID: 1693937778727792, guid: 490a1415fff08b342a89682f77fc7230, type: 2}
+  - {fileID: 1003091605512218, guid: c17302d371e3cf94785fc643264775a5, type: 2}
+  - {fileID: 1955594103587230, guid: b9a7635d215010e46a619743843bd8b0, type: 2}
+  - {fileID: 1855954964875430, guid: 2c8c9c59d837fa84baf9849b6b90f4a2, type: 2}
+  - {fileID: 1445878803884502, guid: 5340b2572a4dd0d49b4d3f4c0b719100, type: 2}
+  - {fileID: 1536372458837006, guid: 871a1591560084242b039fc6e632306e, type: 2}
 --- !u!54 &1400404423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62673,6 +62673,7 @@ MonoBehaviour:
   fireButton: {fileID: 0}
   oldEnemy: {fileID: 0}
   perspButton: {fileID: 1074088315}
+  damageFX: {fileID: 0}
   showSandboxSprite: {fileID: 21300000, guid: 8199ad47392023e45969798858f021e3, type: 3}
   hideSandboxSprite: {fileID: 21300000, guid: 45164371d1830de44acf13255a0b5877, type: 3}
   onFlashLightSprite: {fileID: 21300000, guid: ccbefb1dc4a36af49b078d3e98aa35ab, type: 3}
@@ -62773,6 +62774,8 @@ MonoBehaviour:
   thirdPersonSprite: {fileID: 21300000, guid: d1782cb14ec4b8f4b9c1fc2f0fb00c37, type: 3}
   firstPersonSprite: {fileID: 21300000, guid: bbfa305e73a5d944cb0e695566007fbc, type: 3}
   defaultSprite: {fileID: 21300000, guid: 9ecf4ab6f6568ab4aacff6c274c8bddf, type: 3}
+  ship: {fileID: 0}
+  perspView: defaultView
 --- !u!1 &1924870531
 GameObject:
   m_ObjectHideFlags: 0
