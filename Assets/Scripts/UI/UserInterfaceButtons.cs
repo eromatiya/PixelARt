@@ -374,6 +374,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		if (fireButton) {
 			
 			fireButton.SetActive (true);
+			Model.GetComponent<ShootBullet> ().fireButton.GetComponent<Image> ().fillAmount = 1;
 
 		}
 
@@ -538,7 +539,12 @@ public class UserInterfaceButtons : MonoBehaviour
 			enemyBar.SetActive (false);
 		}
 
-		
+		if (fireButton) {
+
+			Model.GetComponent<ShootBullet> ().fireButton.GetComponent<Image> ().fillAmount = 1;
+
+		}
+
         Model.GetComponent<HitObstacle>().isOver = false;
         gameObject.GetComponent<ScoreScript>().ResetScores();
         PlayButton.SetActive(false);

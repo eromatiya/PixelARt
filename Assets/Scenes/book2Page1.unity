@@ -7756,14 +7756,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -571756775
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -7908,7 +7908,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -8152,7 +8152,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -8267,12 +8267,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -8316,7 +8316,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -8409,13 +8409,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -11028,7 +11028,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213491871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -11541,14 +11541,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 985479546
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -11693,7 +11693,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -11937,7 +11937,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -12052,12 +12052,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -12101,7 +12101,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -12194,13 +12194,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -14813,7 +14813,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231243072}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -24822,7 +24822,7 @@ RectTransform:
   - {fileID: 1383994560}
   - {fileID: 49603618}
   - {fileID: 198481411}
-  - {fileID: 671614910}
+  - {fileID: 2082137052}
   - {fileID: 2093513243}
   - {fileID: 190754820}
   - {fileID: 21924938}
@@ -29175,7 +29175,7 @@ CanvasRenderer:
 --- !u!1 &671614909
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1650708643768430, guid: 67578631c928de641ba0075a9f9b9e00,
+  m_PrefabParentObject: {fileID: 1926877358694694, guid: 693eb6c43358efc4998d65f596b9a79f,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
@@ -29190,30 +29190,30 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &671614910
 RectTransform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224932264697052842, guid: 67578631c928de641ba0075a9f9b9e00,
+  m_PrefabParentObject: {fileID: 224314014458457876, guid: 693eb6c43358efc4998d65f596b9a79f,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671614909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999937, y: 0.9999937, z: 0.9999937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 585916645}
-  m_RootOrder: 19
+  m_Father: {fileID: 2082137052}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -168.8, y: 63.599995}
+  m_AnchoredPosition: {x: -46.002983, y: 46.000504}
   m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671614913
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114073701119777602, guid: 67578631c928de641ba0075a9f9b9e00,
+  m_PrefabParentObject: {fileID: 114506099115953088, guid: 693eb6c43358efc4998d65f596b9a79f,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671614909}
@@ -29255,7 +29255,7 @@ MonoBehaviour:
 --- !u!114 &671614914
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114427636329549356, guid: 67578631c928de641ba0075a9f9b9e00,
+  m_PrefabParentObject: {fileID: 114665590208872864, guid: 693eb6c43358efc4998d65f596b9a79f,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671614909}
@@ -29273,17 +29273,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: ce4cc89d3b4fc054ebfa256e616945b0, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillClockwise: 0
+  m_FillOrigin: 2
 --- !u!222 &671614915
 CanvasRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222087225052312392, guid: 67578631c928de641ba0075a9f9b9e00,
+  m_PrefabParentObject: {fileID: 222614835152301658, guid: 693eb6c43358efc4998d65f596b9a79f,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671614909}
@@ -36809,7 +36809,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -38477,14 +38477,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1873504918
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -38629,7 +38629,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -38873,7 +38873,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -38988,12 +38988,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -39037,7 +39037,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -39130,13 +39130,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -41749,7 +41749,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 943671363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -45438,14 +45438,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 567476146
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -45590,7 +45590,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -45834,7 +45834,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -45949,12 +45949,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -45998,7 +45998,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -46091,13 +46091,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -48710,7 +48710,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1045913151}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -51686,14 +51686,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -835119263
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -51838,7 +51838,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -52082,7 +52082,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -52197,12 +52197,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -52246,7 +52246,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -52339,13 +52339,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -54958,7 +54958,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121314808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -63421,8 +63421,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 585504606}
   m_HandleRect: {fileID: 585504605}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.124387376
+  m_Value: 0.9999999
+  m_Size: 0.12438736
   m_NumberOfSteps: 1
   m_OnValueChanged:
     m_PersistentCalls:
@@ -64501,14 +64501,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1822588263
+  randomSeed: -425976809
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -64653,7 +64653,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -64897,7 +64897,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -65012,12 +65012,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -65061,7 +65061,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -65154,13 +65154,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -67773,7 +67773,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406178346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -82582,14 +82582,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 403383957
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -82734,7 +82734,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -82978,7 +82978,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -83093,12 +83093,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -83142,7 +83142,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -83235,13 +83235,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -85854,7 +85854,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854133317}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -87834,7 +87834,7 @@ MonoBehaviour:
   arScalerSliderSBox: {fileID: 763232385}
   healthBar: {fileID: 2093513242}
   enemyBar: {fileID: 190754819}
-  fireButton: {fileID: 671614909}
+  fireButton: {fileID: 2082137051}
   oldEnemy: {fileID: 0}
   perspButton: {fileID: 1093538179}
   showSandboxSprite: {fileID: 21300000, guid: 8199ad47392023e45969798858f021e3, type: 3}
@@ -92383,6 +92383,79 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2079805318}
+--- !u!1 &2082137051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1267818487002860, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2082137052}
+  - component: {fileID: 2082137054}
+  - component: {fileID: 2082137053}
+  m_Layer: 5
+  m_Name: FireBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2082137052
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224812011330896210, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082137051}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 671614910}
+  m_Father: {fileID: 585916645}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.97, y: -178.28}
+  m_SizeDelta: {x: 92.002, y: 92}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2082137053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114998879739875098, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082137051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.50735295, g: 0.50735295, b: 0.50735295, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce4cc89d3b4fc054ebfa256e616945b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2082137054
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222553788943351898, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082137051}
 --- !u!1 &2086952039
 GameObject:
   m_ObjectHideFlags: 0
@@ -92975,14 +93048,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1850559150
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -93127,7 +93200,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -93371,7 +93444,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -93486,12 +93559,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -93535,7 +93608,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -93628,13 +93701,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -96247,7 +96320,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095606961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 
@@ -97860,14 +97933,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -42821478
+  randomSeed: 1316637376
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -98012,7 +98085,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.237
+      scalar: 0.275
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -98256,7 +98329,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 200
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -98371,12 +98444,12 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -98420,7 +98493,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 160
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -98513,13 +98586,13 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 2
           time: 0
-          value: 0.23529053
-          inSlope: -2
-          outSlope: -2
+          value: 0.06756973
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0
+          value: 0.06756973
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -101132,7 +101205,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2127599620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ecfa5168c2de04098032f67cac42e9, type: 3}
   m_Name: 

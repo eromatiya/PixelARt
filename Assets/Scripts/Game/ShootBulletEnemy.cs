@@ -86,8 +86,8 @@ public class ShootBulletEnemy : MonoBehaviour {
 					break;
 				}
 				bulletIns.transform.SetParent (transform.root);
-				rb.AddForce (transform.forward * 215);
-				Destroy (bulletIns, 1);
+				rb.AddForce (transform.forward * 210);
+				Destroy (bulletIns, 0.90f);
 			}
 		}
 	}

@@ -39074,7 +39074,7 @@ RectTransform:
   - {fileID: 314071610}
   - {fileID: 1125074856}
   - {fileID: 1724059079}
-  - {fileID: 1338094085}
+  - {fileID: 802648189}
   - {fileID: 1300729037}
   - {fileID: 947304237}
   m_Father: {fileID: 178060817}
@@ -51611,6 +51611,79 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799855837}
+--- !u!1 &802648188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1267818487002860, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 802648189}
+  - component: {fileID: 802648191}
+  - component: {fileID: 802648190}
+  m_Layer: 5
+  m_Name: FireBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &802648189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224812011330896210, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802648188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1338094085}
+  m_Father: {fileID: 585916645}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.97, y: -178.28}
+  m_SizeDelta: {x: 92.002, y: 92}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &802648190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114998879739875098, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802648188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.50735295, g: 0.50735295, b: 0.50735295, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ce4cc89d3b4fc054ebfa256e616945b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &802648191
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222553788943351898, guid: 693eb6c43358efc4998d65f596b9a79f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802648188}
 --- !u!1 &807310029
 GameObject:
   m_ObjectHideFlags: 0
@@ -84681,7 +84754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1338094085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84691,14 +84764,14 @@ RectTransform:
   m_GameObject: {fileID: 1338094084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999937, y: 0.9999937, z: 0.9999937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 585916645}
-  m_RootOrder: 20
+  m_Father: {fileID: 802648189}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -168.8, y: 63.599995}
+  m_AnchoredPosition: {x: -46.002983, y: 46.000504}
   m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338094086
@@ -84764,12 +84837,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: ce4cc89d3b4fc054ebfa256e616945b0, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
-  m_FillClockwise: 1
+  m_FillClockwise: 0
   m_FillOrigin: 0
 --- !u!222 &1338094088
 CanvasRenderer:
@@ -124507,7 +124580,7 @@ MonoBehaviour:
   arScalerSliderSBox: {fileID: 1822110284}
   healthBar: {fileID: 1300729036}
   enemyBar: {fileID: 1724059078}
-  fireButton: {fileID: 1338094084}
+  fireButton: {fileID: 802648188}
   oldEnemy: {fileID: 0}
   perspButton: {fileID: 947304236}
   showSandboxSprite: {fileID: 21300000, guid: 8199ad47392023e45969798858f021e3, type: 3}

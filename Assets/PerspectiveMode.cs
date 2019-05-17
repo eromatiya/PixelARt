@@ -139,7 +139,7 @@ public class PerspectiveMode : MonoBehaviour {
 			break;
 
 		case "book2Page1":
-			Vector3 ship1ThirdPersonLocPosition = new Vector3 (0, -0.472f, -0.29f);
+			Vector3 ship1ThirdPersonLocPosition = new Vector3 (0, -0.472f, -0.351f);
 			Vector3 ship1ThirdPersonLocEulerAngles = new Vector3 (-68.471f, 0, 0);
 
 			arCamera.transform.localPosition = ship1ThirdPersonLocPosition;
