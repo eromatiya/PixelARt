@@ -47,8 +47,6 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject analogController;
 	public GameObject arTrackable;
 	public GameObject arController;
-	//public GameObject stayOnLostBtn;
-	//public GameObject hideOnLostBtn;
 	public GameObject arScalerSliderGame;
 	public GameObject arScalerSliderSBox;
 	public GameObject healthBar;
@@ -56,6 +54,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	public GameObject fireButton;
 	public GameObject oldEnemy;
 	public GameObject perspButton;
+	public DamageFXManager damageFX;
 
 	public Sprite showSandboxSprite;
 	public Sprite hideSandboxSprite;
@@ -437,6 +436,11 @@ public class UserInterfaceButtons : MonoBehaviour
 		
 		}
 
+		if (damageFX) {
+
+			damageFX.DisableDamageFX ();
+		}
+
         //Scale up size of model in game
         gameOffModPos();
 		isInGame = false;
@@ -543,6 +547,11 @@ public class UserInterfaceButtons : MonoBehaviour
 
 			Model.GetComponent<ShootBullet> ().fireButton.GetComponent<Image> ().fillAmount = 1;
 
+		}
+
+		if (damageFX) {
+		
+			damageFX.DisableDamageFX ();
 		}
 
         Model.GetComponent<HitObstacle>().isOver = false;
