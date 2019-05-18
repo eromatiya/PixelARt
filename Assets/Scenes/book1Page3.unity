@@ -11493,7 +11493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 309339826}
   - component: {fileID: 309339827}
-  - component: {fileID: 309339828}
   m_Layer: 9
   m_Name: RandSpawnManager
   m_TagString: Untagged
@@ -11527,61 +11526,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObjects:
   - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  spawnTime: 3
-  spawnPoints:
-  - {fileID: 688284578}
-  - {fileID: 1139183547}
-  - {fileID: 869850452}
-  - {fileID: 308179572}
-  - {fileID: 639290009}
-  - {fileID: 623936226}
-  - {fileID: 1365364189}
-  - {fileID: 272594945}
-  - {fileID: 33568059}
-  - {fileID: 1130817650}
-  - {fileID: 310906111}
-  - {fileID: 511179056}
-  - {fileID: 607342385}
-  - {fileID: 1899453981}
-  - {fileID: 1106897422}
-  - {fileID: 1692082374}
-  - {fileID: 17750893}
-  - {fileID: 1027055565}
-  - {fileID: 1527763219}
-  - {fileID: 925516628}
-  - {fileID: 582207169}
-  - {fileID: 1602693941}
-  - {fileID: 697262516}
---- !u!114 &309339828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309339825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4df9aeab40d5c214e8bf96bf11b0c7ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnObjects:
-  - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1036577661675800, guid: 004f199fbf47a584aa0dde79262c2c25, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
-  - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
   - {fileID: 1108341827721600, guid: 6cb3ffd5d7576fb4b9b47ffeb15140ea, type: 2}
   spawnTime: 3
   spawnPoints:

@@ -129,7 +129,7 @@ public class PerspectiveMode : MonoBehaviour {
 
 		case "book1Page3":
 
-			Vector3 bearThirdPersonLocPosition = new Vector3 (0.463f, -0.689f, -1.429f);
+			Vector3 bearThirdPersonLocPosition = new Vector3 (0.51f, -0.7f, -1.2f);
 			Vector3 bearThirdPersonLocEulerAngles = new Vector3 (-31.8f, 0, 0);
 
 			arCamera.transform.localPosition = bearThirdPersonLocPosition;
