@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RandomDestroy : MonoBehaviour {
 
-    private float destroyTime = 10f;
+    private float destroyTime = 11.5f;
 
     // Use this for initialization
     void Start () {
 
-        InvokeRepeating("Destroy", destroyTime, Random.Range(destroyTime, 20.0f));
+        InvokeRepeating("Destroy", destroyTime, Random.Range(destroyTime, 21.5f));
 
     }
 	

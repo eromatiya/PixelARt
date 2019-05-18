@@ -129,10 +129,9 @@ public class PerspectiveMode : MonoBehaviour {
 
 		case "book1Page3":
 
-			Vector3 bearThirdPersonLocPosition = new Vector3 (0, 0.426f, -0.403f);
-			Vector3 bearThirdPersonLocEulerAngles = new Vector3 (26.766f, 0, 0);
+			Vector3 bearThirdPersonLocPosition = new Vector3 (0.463f, -0.689f, -1.429f);
+			Vector3 bearThirdPersonLocEulerAngles = new Vector3 (-31.8f, 0, 0);
 
-			arCamera.transform.SetParent (model.transform);
 			arCamera.transform.localPosition = bearThirdPersonLocPosition;
 			arCamera.transform.localEulerAngles = bearThirdPersonLocEulerAngles;
 
@@ -181,10 +180,9 @@ public class PerspectiveMode : MonoBehaviour {
 		case "book3Page2":
 
 
-			Vector3 shipThirdPersonLocPosition = new Vector3 (0, 0.118f, -0.164f);
-			Vector3 shipThirdPersonLocEulerAngles = new Vector3 (18.444f, 0, 0);
+			Vector3 shipThirdPersonLocPosition = new Vector3 (0.203f, -0.316f, -0.615f);
+			Vector3 shipThirdPersonLocEulerAngles = new Vector3 (-30.552f, 0, 0);
 
-			arCamera.transform.SetParent (ship.transform);
 			arCamera.transform.localPosition = shipThirdPersonLocPosition;
 			arCamera.transform.localEulerAngles = shipThirdPersonLocEulerAngles;
 			break;

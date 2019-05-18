@@ -10,9 +10,9 @@ public class BulletToEnemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if (GameObject.Find ("ExplosionManager")) {
+		if (GameObject.FindGameObjectWithTag ("ExplosionManager")) {
 		
-			expManager = GameObject.Find ("ExplosionManager");
+			expManager = GameObject.FindGameObjectWithTag ("ExplosionManager");
 		}
 
 		if (GameObject.FindGameObjectWithTag ("Controller")) {

@@ -30,9 +30,12 @@ public class ARScaleSlider : MonoBehaviour {
 			break;
 
 		case("book1Page2"):
+			maxValue = 10.0f;
+			break;
+
 		case("book1Page3"):
 		case("book3Page2"):
-			maxValue = 10.0f;
+			maxValue = 14.0f;
 			break;
 
 		case("book2Page1"):

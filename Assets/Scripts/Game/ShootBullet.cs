@@ -93,6 +93,8 @@ public class ShootBullet : MonoBehaviour {
 				isEmpty = true;
 				willNotShoot = true;
 			}
+
+			bulletIns.transform.SetParent (transform.root);
 			rb.AddForce (-transform.up * 200f);
 			Destroy (bulletIns, 1f);
 		}

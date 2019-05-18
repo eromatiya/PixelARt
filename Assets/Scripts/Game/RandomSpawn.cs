@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class RandomSpawn : MonoBehaviour {
 
     public GameObject[] spawnObjects;       // The enemy prefab to be spawned.
-    public float spawnTime = 0.5f;            // How long between each spawn.
+    public float spawnTime = 0.1f;            // How long between each spawn.
     public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 
     Vector3 spawnScale;

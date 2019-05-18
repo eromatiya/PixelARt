@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 4929982647838744}
   - component: {fileID: 65309783762962214}
   - component: {fileID: 54515595785096670}
+  - component: {fileID: 114147075883311276}
   m_Layer: 9
   m_Name: WhaleBullet
   m_TagString: BulletEnemy
@@ -636,6 +637,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 28.944656, y: 18.033663, z: 50.218964}
   m_Center: {x: 0.22769421, y: 4.791321, z: -2.4799347}
+--- !u!114 &114147075883311276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455697399557578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2169a43d1a8424aa7d3db4a01675dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198104868354141086
 ParticleSystem:
   m_ObjectHideFlags: 1

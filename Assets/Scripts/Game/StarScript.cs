@@ -59,7 +59,13 @@ public class StarScript : MonoBehaviour {
             ScoreScript.Score += 5;
 
             //Add Star
-            ScoreScript.StarCount++;
+			if (activeScene == "book1Page3" || activeScene == "book3Page2") {
+
+				ScoreScript.StarCount += 2;
+			} else {
+				
+				ScoreScript.StarCount++;
+			}
 
 			StarManager ();
 
@@ -70,8 +76,14 @@ public class StarScript : MonoBehaviour {
 	//add star on your pockets
 	private void StarManager(){
 	
+		if (activeScene == "book1Page3" || activeScene == "book3Page2") {
 
-		starTotalGet++;
+			starTotalGet += 2;
+		} else {
+
+
+			starTotalGet++;
+		}
 		PlayerPrefs.SetInt ("starTotal", starTotalGet);
 	//	Debug.Log ("Star: " + PlayerPrefs.GetInt ("starTotal"));
 	

@@ -411,6 +411,7 @@ public class UserInterfaceButtons : MonoBehaviour
     public void GameStop()
     {
 		perspButton.SetActive (false);
+		DefaultPerspective ();
 
 		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = 0;
 		gameObject.GetComponent<PerspectiveMode> ().DefaultView ();
@@ -692,7 +693,7 @@ public class UserInterfaceButtons : MonoBehaviour
 		//if(PlayButton.activeSelf && Playing == true)
 
         sfxManager.GetComponent<ModelSoundManager>().StopAllSFX();
-		arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = Mathf.Infinity;
+		//arTrackable.GetComponent<ARTrackedObject> ().secondsToRemainVisible = Mathf.Infinity;
         isOnTarget = false;
     }
 
@@ -700,7 +701,7 @@ public class UserInterfaceButtons : MonoBehaviour
     public void onTargetFound()
     {
 
-		DefaultPerpective ();
+		DefaultPerspective ();
 
         if (Playing == false && StopGame.activeSelf)
         {
@@ -1188,13 +1189,14 @@ public class UserInterfaceButtons : MonoBehaviour
     #endregion
 
 
-	private void DefaultPerpective(){
+	private void DefaultPerspective(){
 	
 		if (Playing) {
 		
 			gameObject.GetComponent<PerspectiveMode> ().DefaultView ();
 			gameObject.GetComponent<PerspectiveMode>().perspView="defaultView";
 			gameObject.GetComponent<PerspectiveMode> ().ChangePerspective ();
+			gameObject.GetComponent<PerspectiveMode> ().arTrackedObj.secondsToRemainVisible = 0;
 
 		}
 
