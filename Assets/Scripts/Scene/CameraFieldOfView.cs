@@ -12,6 +12,7 @@ public class CameraFieldOfView : MonoBehaviour {
         //gameObject.GetComponent<Camera>().CopyFrom(Camera.main);
 
         gizCam = gameObject.GetComponent<Camera>();
+		gizCam.enabled = true;
 
         /*
         gizCam.CopyFrom(Camera.main);

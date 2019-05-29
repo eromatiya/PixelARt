@@ -759,7 +759,7 @@ public class UserInterfaceButtons : MonoBehaviour
 			}
 		}
 
-		gizmoCamera.GetComponent<Camera> ().enabled = false;
+		//gizmoCamera.GetComponent<Camera> ().enabled = false;
 
         sfxManager.GetComponent<ModelSoundManager>().EnableRandomSound();
 
